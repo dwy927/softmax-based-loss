@@ -1,0 +1,619 @@
+Model(
+  (backbone): Sequential(
+    (0): Conv2d(1, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3))
+    (1): Conv2d(64, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (2): ReLU()
+    (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (4): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+    (5): ReLU()
+    (6): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): ReLU()
+    (8): AvgPool2d(kernel_size=4, stride=4, padding=0)
+  )
+  (feature): Linear(in_features=512, out_features=2, bias=True)
+  (pred): Linear(in_features=2, out_features=10, bias=False)
+)
+Epoch 1/40
+----------
+step: 0, train loss: 46.6746, train acc: 0.0312
+step: 100, train loss: 6.3593, train acc: 0.2656
+step: 200, train loss: 6.5892, train acc: 0.2500
+step: 300, train loss: 3.7876, train acc: 0.2344
+step: 400, train loss: 4.3196, train acc: 0.2812
+step: 500, train loss: 3.1924, train acc: 0.3750
+step: 600, train loss: 2.5931, train acc: 0.3906
+step: 700, train loss: 1.3594, train acc: 0.4375
+step: 800, train loss: 1.5788, train acc: 0.3438
+step: 900, train loss: 1.3574, train acc: 0.5312
+Loss is:4.7476, Train Accuracy is:35.93%, Test Accuracy is:45.87%, {'accuracy': 0.4587, 'epoch': 1}
+0.1765, 0.3627, 0.1813, 0.1417, 0.4943, 0.7288, 0.1567, 0.7445, 0.4717, 0.1347
+0.0010, 0.0000, 0.0000, 0.0000, 0.7200, 0.8310, 0.5430, 0.7160, 0.8220, 0.9540
+Epoch 2/40
+----------
+step: 0, train loss: 0.9964, train acc: 0.4375
+step: 100, train loss: 1.0846, train acc: 0.5000
+step: 200, train loss: 1.2435, train acc: 0.4531
+step: 300, train loss: 1.0688, train acc: 0.5312
+step: 400, train loss: 1.1209, train acc: 0.4844
+step: 500, train loss: 1.2299, train acc: 0.4844
+step: 600, train loss: 0.9642, train acc: 0.5625
+step: 700, train loss: 1.3764, train acc: 0.6250
+step: 800, train loss: 0.8671, train acc: 0.6719
+step: 900, train loss: 0.9585, train acc: 0.5781
+Loss is:1.1645, Train Accuracy is:51.18%, Test Accuracy is:58.55%, {'accuracy': 0.5855, 'epoch': 2}
+0.2813, 0.2262, 0.2748, 0.1660, 0.3392, 0.8965, 0.3405, 0.8453, 0.8557, 0.8927
+0.5650, 0.7080, 0.9510, 0.0030, 0.0000, 0.9020, 0.0000, 0.8550, 0.9240, 0.9470
+Epoch 3/40
+----------
+step: 0, train loss: 1.0121, train acc: 0.5625
+step: 100, train loss: 0.6096, train acc: 0.6875
+step: 200, train loss: 2.1046, train acc: 0.5469
+step: 300, train loss: 1.3155, train acc: 0.5156
+step: 400, train loss: 0.9361, train acc: 0.6562
+step: 500, train loss: 0.7250, train acc: 0.6719
+step: 600, train loss: 0.7006, train acc: 0.6094
+step: 700, train loss: 1.2488, train acc: 0.4688
+step: 800, train loss: 1.7795, train acc: 0.4219
+step: 900, train loss: 1.0045, train acc: 0.6250
+Loss is:0.9886, Train Accuracy is:59.91%, Test Accuracy is:61.33%, {'accuracy': 0.6133, 'epoch': 3}
+0.2520, 0.8687, 0.3367, 0.2478, 0.2993, 0.9045, 0.4258, 0.8653, 0.8772, 0.9137
+0.8170, 0.9240, 0.0000, 0.0000, 0.0000, 0.9250, 0.7260, 0.9070, 0.9100, 0.9240
+Epoch 4/40
+----------
+step: 0, train loss: 0.7870, train acc: 0.6406
+step: 100, train loss: 0.7672, train acc: 0.5781
+step: 200, train loss: 0.7322, train acc: 0.6562
+step: 300, train loss: 0.7386, train acc: 0.6875
+step: 400, train loss: 1.3842, train acc: 0.5469
+step: 500, train loss: 0.8077, train acc: 0.6250
+step: 600, train loss: 0.8585, train acc: 0.6719
+step: 700, train loss: 0.7729, train acc: 0.7344
+step: 800, train loss: 0.5752, train acc: 0.6562
+step: 900, train loss: 0.5642, train acc: 0.7188
+Loss is:0.8740, Train Accuracy is:61.74%, Test Accuracy is:62.56%, {'accuracy': 0.6256, 'epoch': 4}
+0.2557, 0.8985, 0.2517, 0.1630, 0.3923, 0.9263, 0.5310, 0.9088, 0.9165, 0.9303
+0.0020, 0.8540, 0.0000, 0.9110, 0.0000, 0.9390, 0.8330, 0.9210, 0.9160, 0.8800
+Epoch 5/40
+----------
+step: 0, train loss: 0.8193, train acc: 0.6250
+step: 100, train loss: 0.8927, train acc: 0.6406
+step: 200, train loss: 0.9203, train acc: 0.5938
+step: 300, train loss: 0.9298, train acc: 0.5781
+step: 400, train loss: 0.7904, train acc: 0.6406
+step: 500, train loss: 0.6295, train acc: 0.6719
+step: 600, train loss: 0.8669, train acc: 0.5625
+step: 700, train loss: 1.0400, train acc: 0.5469
+step: 800, train loss: 1.0865, train acc: 0.5938
+step: 900, train loss: 0.7604, train acc: 0.6406
+Loss is:0.8497, Train Accuracy is:62.01%, Test Accuracy is:62.07%, {'accuracy': 0.6256, 'epoch': 4}
+0.2513, 0.9207, 0.1483, 0.0972, 0.4607, 0.9285, 0.6317, 0.9105, 0.9193, 0.9332
+0.0010, 0.9410, 0.0000, 0.0000, 0.8080, 0.9600, 0.7080, 0.9510, 0.9450, 0.8930
+Epoch 6/40
+----------
+step: 0, train loss: 1.0091, train acc: 0.5625
+step: 100, train loss: 1.0929, train acc: 0.5312
+step: 200, train loss: 0.6199, train acc: 0.7812
+step: 300, train loss: 0.8452, train acc: 0.6562
+step: 400, train loss: 0.7920, train acc: 0.7031
+step: 500, train loss: 0.7256, train acc: 0.6875
+step: 600, train loss: 0.7318, train acc: 0.6719
+step: 700, train loss: 0.7555, train acc: 0.6562
+step: 800, train loss: 0.7124, train acc: 0.7188
+step: 900, train loss: 0.7519, train acc: 0.5469
+Loss is:0.8429, Train Accuracy is:61.88%, Test Accuracy is:63.86%, {'accuracy': 0.6386, 'epoch': 6}
+0.2217, 0.9340, 0.0985, 0.0055, 0.5498, 0.9330, 0.6683, 0.9142, 0.9310, 0.9325
+0.0000, 0.9360, 0.8990, 0.0000, 0.7870, 0.9190, 0.0000, 0.9670, 0.9390, 0.9390
+Epoch 7/40
+----------
+step: 0, train loss: 0.5568, train acc: 0.7031
+step: 100, train loss: 0.6731, train acc: 0.6562
+step: 200, train loss: 0.8223, train acc: 0.5781
+step: 300, train loss: 0.4863, train acc: 0.7500
+step: 400, train loss: 0.8505, train acc: 0.7188
+step: 500, train loss: 0.8873, train acc: 0.5000
+step: 600, train loss: 0.7486, train acc: 0.6094
+step: 700, train loss: 1.2559, train acc: 0.7031
+step: 800, train loss: 0.5173, train acc: 0.7812
+step: 900, train loss: 0.6354, train acc: 0.6875
+Loss is:0.7478, Train Accuracy is:67.01%, Test Accuracy is:74.84%, {'accuracy': 0.7484, 'epoch': 7}
+0.3148, 0.9522, 0.1195, 0.2895, 0.5362, 0.9452, 0.7155, 0.9308, 0.9550, 0.9420
+0.4430, 0.9610, 0.5940, 0.6540, 0.5090, 0.9440, 0.6080, 0.8790, 0.9200, 0.9720
+Epoch 8/40
+----------
+step: 0, train loss: 0.6044, train acc: 0.7188
+step: 100, train loss: 0.5117, train acc: 0.8594
+step: 200, train loss: 0.4896, train acc: 0.8750
+step: 300, train loss: 0.5862, train acc: 0.7969
+step: 400, train loss: 0.8588, train acc: 0.7500
+step: 500, train loss: 0.5670, train acc: 0.7812
+step: 600, train loss: 0.4197, train acc: 0.8438
+step: 700, train loss: 0.6126, train acc: 0.7031
+step: 800, train loss: 0.5725, train acc: 0.7500
+step: 900, train loss: 0.5783, train acc: 0.9062
+Loss is:0.6394, Train Accuracy is:78.57%, Test Accuracy is:80.01%, {'accuracy': 0.8001, 'epoch': 8}
+0.7728, 0.9602, 0.7757, 0.7947, 0.4673, 0.9485, 0.3090, 0.9335, 0.9538, 0.9418
+0.8470, 0.9690, 0.7040, 0.8430, 0.5030, 0.9490, 0.3410, 0.9690, 0.9560, 0.9200
+Epoch 9/40
+----------
+step: 0, train loss: 0.4644, train acc: 0.8281
+step: 100, train loss: 0.6534, train acc: 0.7500
+step: 200, train loss: 0.4750, train acc: 0.8594
+step: 300, train loss: 0.4995, train acc: 0.8594
+step: 400, train loss: 0.5468, train acc: 0.8438
+step: 500, train loss: 0.5506, train acc: 0.8594
+step: 600, train loss: 1.0550, train acc: 0.7500
+step: 700, train loss: 0.6175, train acc: 0.7500
+step: 800, train loss: 0.3516, train acc: 0.9062
+step: 900, train loss: 0.6273, train acc: 0.8125
+Loss is:0.6159, Train Accuracy is:80.38%, Test Accuracy is:78.76%, {'accuracy': 0.8001, 'epoch': 8}
+0.8392, 0.9620, 0.7873, 0.8118, 0.6260, 0.9472, 0.2350, 0.9353, 0.9540, 0.9403
+0.8680, 0.9650, 0.5640, 0.7970, 0.3910, 0.9380, 0.4830, 0.9640, 0.9680, 0.9380
+Epoch 10/40
+----------
+step: 0, train loss: 0.5996, train acc: 0.7812
+step: 100, train loss: 0.7120, train acc: 0.8281
+step: 200, train loss: 0.6852, train acc: 0.7812
+step: 300, train loss: 0.4802, train acc: 0.8281
+step: 400, train loss: 0.8127, train acc: 0.7812
+step: 500, train loss: 0.5004, train acc: 0.7969
+step: 600, train loss: 0.5277, train acc: 0.7656
+step: 700, train loss: 0.7971, train acc: 0.8750
+step: 800, train loss: 0.4898, train acc: 0.8125
+step: 900, train loss: 0.5246, train acc: 0.8125
+Loss is:0.6076, Train Accuracy is:81.32%, Test Accuracy is:80.05%, {'accuracy': 0.8005, 'epoch': 10}
+0.8417, 0.9665, 0.7895, 0.8157, 0.6467, 0.9487, 0.2868, 0.9408, 0.9552, 0.9403
+0.8760, 0.9730, 0.6520, 0.8150, 0.5260, 0.9760, 0.4160, 0.9340, 0.9740, 0.8630
+Epoch 11/40
+----------
+step: 0, train loss: 0.4730, train acc: 0.8594
+step: 100, train loss: 0.7067, train acc: 0.8281
+step: 200, train loss: 0.6056, train acc: 0.8125
+step: 300, train loss: 0.5070, train acc: 0.8594
+step: 400, train loss: 0.7229, train acc: 0.6875
+step: 500, train loss: 0.4310, train acc: 0.8438
+step: 600, train loss: 0.3978, train acc: 0.8438
+step: 700, train loss: 0.8122, train acc: 0.8438
+step: 800, train loss: 0.6469, train acc: 0.8125
+step: 900, train loss: 0.5872, train acc: 0.7500
+Loss is:0.5674, Train Accuracy is:82.62%, Test Accuracy is:81.34%, {'accuracy': 0.8134, 'epoch': 11}
+0.8605, 0.9692, 0.8003, 0.8332, 0.6830, 0.9517, 0.3142, 0.9450, 0.9597, 0.9455
+0.8630, 0.9770, 0.8270, 0.7670, 0.6560, 0.9380, 0.2760, 0.9440, 0.9550, 0.9310
+Epoch 12/40
+----------
+step: 0, train loss: 0.5868, train acc: 0.8125
+step: 100, train loss: 0.5594, train acc: 0.8594
+step: 200, train loss: 0.6049, train acc: 0.8750
+step: 300, train loss: 0.5006, train acc: 0.8125
+step: 400, train loss: 0.5706, train acc: 0.8438
+step: 500, train loss: 0.6181, train acc: 0.7812
+step: 600, train loss: 0.4850, train acc: 0.8281
+step: 700, train loss: 0.7240, train acc: 0.7031
+step: 800, train loss: 0.8043, train acc: 0.7656
+step: 900, train loss: 0.5711, train acc: 0.8281
+Loss is:0.5595, Train Accuracy is:82.97%, Test Accuracy is:82.79%, {'accuracy': 0.8279, 'epoch': 12}
+0.8557, 0.9713, 0.7997, 0.8310, 0.6795, 0.9555, 0.3512, 0.9437, 0.9640, 0.9455
+0.8690, 0.9700, 0.8020, 0.8420, 0.6290, 0.9520, 0.3750, 0.9720, 0.9450, 0.9230
+Epoch 13/40
+----------
+step: 0, train loss: 0.4608, train acc: 0.8281
+step: 100, train loss: 0.4981, train acc: 0.7812
+step: 200, train loss: 0.4162, train acc: 0.8594
+step: 300, train loss: 0.5781, train acc: 0.8281
+step: 400, train loss: 0.6729, train acc: 0.8750
+step: 500, train loss: 0.6936, train acc: 0.8281
+step: 600, train loss: 0.7984, train acc: 0.7969
+step: 700, train loss: 0.3046, train acc: 0.8906
+step: 800, train loss: 0.6295, train acc: 0.8281
+step: 900, train loss: 0.3711, train acc: 0.8750
+Loss is:0.5437, Train Accuracy is:83.32%, Test Accuracy is:83.12%, {'accuracy': 0.8312, 'epoch': 13}
+0.8483, 0.9728, 0.7965, 0.8383, 0.6997, 0.9553, 0.3650, 0.9433, 0.9640, 0.9488
+0.8560, 0.9720, 0.7940, 0.7770, 0.7490, 0.9680, 0.3750, 0.9460, 0.9500, 0.9250
+Epoch 14/40
+----------
+step: 0, train loss: 0.6266, train acc: 0.8125
+step: 100, train loss: 0.4336, train acc: 0.8594
+step: 200, train loss: 0.3698, train acc: 0.8438
+step: 300, train loss: 0.3716, train acc: 0.8906
+step: 400, train loss: 0.6125, train acc: 0.8594
+step: 500, train loss: 0.3947, train acc: 0.8125
+step: 600, train loss: 0.5829, train acc: 0.8281
+step: 700, train loss: 0.4320, train acc: 0.8906
+step: 800, train loss: 0.4369, train acc: 0.8594
+step: 900, train loss: 0.4047, train acc: 0.8438
+Loss is:0.5372, Train Accuracy is:83.96%, Test Accuracy is:82.06%, {'accuracy': 0.8312, 'epoch': 13}
+0.8640, 0.9757, 0.8062, 0.8400, 0.7123, 0.9563, 0.3788, 0.9465, 0.9665, 0.9495
+0.7870, 0.9710, 0.6820, 0.7970, 0.7910, 0.8690, 0.5060, 0.8550, 0.9610, 0.9870
+Epoch 15/40
+----------
+step: 0, train loss: 0.4957, train acc: 0.9062
+step: 100, train loss: 0.4199, train acc: 0.8906
+step: 200, train loss: 0.5071, train acc: 0.8125
+step: 300, train loss: 0.5978, train acc: 0.8594
+step: 400, train loss: 0.5651, train acc: 0.8750
+step: 500, train loss: 0.7053, train acc: 0.7656
+step: 600, train loss: 0.7286, train acc: 0.7500
+step: 700, train loss: 0.3491, train acc: 0.8281
+step: 800, train loss: 0.4335, train acc: 0.8281
+step: 900, train loss: 0.4184, train acc: 0.7812
+Loss is:0.5194, Train Accuracy is:84.36%, Test Accuracy is:82.51%, {'accuracy': 0.8312, 'epoch': 13}
+0.8615, 0.9772, 0.8000, 0.8398, 0.7082, 0.9628, 0.4083, 0.9535, 0.9700, 0.9547
+0.8690, 0.9360, 0.7220, 0.8570, 0.7070, 0.9570, 0.3450, 0.9630, 0.9680, 0.9270
+Epoch 16/40
+----------
+step: 0, train loss: 0.6942, train acc: 0.7500
+step: 100, train loss: 0.4268, train acc: 0.8750
+step: 200, train loss: 0.3950, train acc: 0.8594
+step: 300, train loss: 0.4173, train acc: 0.8594
+step: 400, train loss: 0.6195, train acc: 0.8594
+step: 500, train loss: 0.4939, train acc: 0.8125
+step: 600, train loss: 0.5623, train acc: 0.8281
+step: 700, train loss: 0.4428, train acc: 0.8438
+step: 800, train loss: 0.5668, train acc: 0.8125
+step: 900, train loss: 0.5838, train acc: 0.8125
+Loss is:0.5101, Train Accuracy is:84.83%, Test Accuracy is:83.31%, {'accuracy': 0.8331, 'epoch': 16}
+0.8608, 0.9772, 0.8008, 0.8477, 0.7295, 0.9622, 0.4258, 0.9545, 0.9720, 0.9528
+0.8830, 0.9700, 0.8040, 0.7930, 0.7240, 0.9660, 0.3680, 0.9570, 0.9510, 0.9150
+Epoch 17/40
+----------
+step: 0, train loss: 0.4572, train acc: 0.8750
+step: 100, train loss: 0.6125, train acc: 0.7969
+step: 200, train loss: 0.9190, train acc: 0.7188
+step: 300, train loss: 0.4542, train acc: 0.8750
+step: 400, train loss: 0.4286, train acc: 0.8594
+step: 500, train loss: 0.5441, train acc: 0.7656
+step: 600, train loss: 0.4631, train acc: 0.8594
+step: 700, train loss: 0.4442, train acc: 0.8594
+step: 800, train loss: 0.3613, train acc: 0.8750
+step: 900, train loss: 0.5650, train acc: 0.7812
+Loss is:0.5539, Train Accuracy is:83.79%, Test Accuracy is:84.13%, {'accuracy': 0.8413, 'epoch': 17}
+0.8527, 0.9713, 0.7828, 0.8412, 0.7223, 0.9515, 0.4025, 0.9448, 0.9640, 0.9455
+0.8580, 0.9710, 0.7620, 0.8180, 0.7540, 0.9690, 0.4140, 0.9570, 0.9760, 0.9340
+Epoch 18/40
+----------
+step: 0, train loss: 0.4119, train acc: 0.8594
+step: 100, train loss: 0.3318, train acc: 0.8906
+step: 200, train loss: 0.4176, train acc: 0.8125
+step: 300, train loss: 0.5986, train acc: 0.8125
+step: 400, train loss: 0.5153, train acc: 0.8906
+step: 500, train loss: 0.3949, train acc: 0.8750
+step: 600, train loss: 0.3981, train acc: 0.8750
+step: 700, train loss: 0.3478, train acc: 0.8750
+step: 800, train loss: 0.5268, train acc: 0.8750
+step: 900, train loss: 0.3927, train acc: 0.8594
+Loss is:0.4867, Train Accuracy is:85.49%, Test Accuracy is:83.91%, {'accuracy': 0.8413, 'epoch': 17}
+0.8680, 0.9798, 0.8065, 0.8530, 0.7395, 0.9673, 0.4468, 0.9575, 0.9743, 0.9565
+0.8640, 0.9700, 0.7450, 0.8620, 0.6720, 0.9500, 0.4480, 0.9710, 0.9690, 0.9400
+Epoch 19/40
+----------
+step: 0, train loss: 0.4264, train acc: 0.8906
+step: 100, train loss: 0.4777, train acc: 0.8438
+step: 200, train loss: 1.3888, train acc: 0.7188
+step: 300, train loss: 0.6631, train acc: 0.8438
+step: 400, train loss: 0.6353, train acc: 0.7812
+step: 500, train loss: 0.5573, train acc: 0.8906
+step: 600, train loss: 0.3707, train acc: 0.8438
+step: 700, train loss: 0.4362, train acc: 0.8438
+step: 800, train loss: 0.7933, train acc: 0.6875
+step: 900, train loss: 0.4201, train acc: 0.9062
+Loss is:0.4947, Train Accuracy is:85.13%, Test Accuracy is:83.83%, {'accuracy': 0.8413, 'epoch': 17}
+0.8587, 0.9790, 0.8030, 0.8547, 0.7278, 0.9640, 0.4447, 0.9553, 0.9727, 0.9533
+0.8680, 0.9700, 0.7060, 0.8190, 0.7560, 0.9680, 0.4720, 0.9390, 0.9680, 0.9170
+Epoch 20/40
+----------
+step: 0, train loss: 0.3102, train acc: 0.9062
+step: 100, train loss: 0.3216, train acc: 0.9062
+step: 200, train loss: 0.5841, train acc: 0.8281
+step: 300, train loss: 0.5800, train acc: 0.8750
+step: 400, train loss: 0.4809, train acc: 0.8125
+step: 500, train loss: 0.4179, train acc: 0.9062
+step: 600, train loss: 0.4738, train acc: 0.7969
+step: 700, train loss: 0.6551, train acc: 0.7656
+step: 800, train loss: 0.6467, train acc: 0.7656
+step: 900, train loss: 0.3844, train acc: 0.8438
+Loss is:0.4844, Train Accuracy is:85.41%, Test Accuracy is:83.15%, {'accuracy': 0.8413, 'epoch': 17}
+0.8643, 0.9783, 0.8055, 0.8543, 0.7315, 0.9645, 0.4563, 0.9563, 0.9763, 0.9530
+0.8150, 0.9740, 0.7940, 0.8600, 0.6440, 0.9590, 0.4350, 0.9100, 0.9700, 0.9540
+Epoch 21/40
+----------
+step: 0, train loss: 0.3599, train acc: 0.8750
+step: 100, train loss: 0.2969, train acc: 0.8906
+step: 200, train loss: 0.3876, train acc: 0.8750
+step: 300, train loss: 0.3922, train acc: 0.8594
+step: 400, train loss: 0.5649, train acc: 0.8750
+step: 500, train loss: 0.5043, train acc: 0.8594
+step: 600, train loss: 0.3927, train acc: 0.8906
+step: 700, train loss: 0.3948, train acc: 0.8281
+step: 800, train loss: 0.4475, train acc: 0.8281
+step: 900, train loss: 0.5622, train acc: 0.8125
+Loss is:0.4948, Train Accuracy is:85.32%, Test Accuracy is:83.40%, {'accuracy': 0.8413, 'epoch': 17}
+0.8653, 0.9777, 0.8090, 0.8560, 0.7377, 0.9627, 0.4512, 0.9490, 0.9728, 0.9507
+0.8300, 0.9620, 0.8030, 0.7690, 0.6760, 0.9540, 0.4950, 0.9710, 0.9560, 0.9240
+Epoch 22/40
+----------
+step: 0, train loss: 0.4490, train acc: 0.8594
+step: 100, train loss: 0.3175, train acc: 0.9219
+step: 200, train loss: 0.5770, train acc: 0.7969
+step: 300, train loss: 0.5650, train acc: 0.7969
+step: 400, train loss: 0.2299, train acc: 0.9219
+step: 500, train loss: 0.3900, train acc: 0.9375
+step: 600, train loss: 0.3996, train acc: 0.8438
+step: 700, train loss: 0.4490, train acc: 0.7969
+step: 800, train loss: 0.7209, train acc: 0.8281
+step: 900, train loss: 0.5628, train acc: 0.8750
+Loss is:0.4715, Train Accuracy is:86.03%, Test Accuracy is:83.52%, {'accuracy': 0.8413, 'epoch': 17}
+0.8652, 0.9805, 0.8077, 0.8575, 0.7565, 0.9705, 0.4767, 0.9583, 0.9768, 0.9532
+0.8520, 0.9580, 0.6880, 0.8740, 0.7440, 0.9450, 0.4530, 0.9790, 0.9500, 0.9090
+Epoch 23/40
+----------
+step: 0, train loss: 0.3017, train acc: 0.9375
+step: 100, train loss: 0.4552, train acc: 0.8125
+step: 200, train loss: 0.9958, train acc: 0.8281
+step: 300, train loss: 0.3294, train acc: 0.9062
+step: 400, train loss: 0.5779, train acc: 0.8281
+step: 500, train loss: 0.3972, train acc: 0.8750
+step: 600, train loss: 0.3813, train acc: 0.8594
+step: 700, train loss: 0.6277, train acc: 0.8438
+step: 800, train loss: 0.3004, train acc: 0.9062
+step: 900, train loss: 0.2946, train acc: 0.9062
+Loss is:0.4841, Train Accuracy is:85.58%, Test Accuracy is:83.58%, {'accuracy': 0.8413, 'epoch': 17}
+0.8642, 0.9795, 0.8067, 0.8593, 0.7328, 0.9638, 0.4705, 0.9542, 0.9737, 0.9535
+0.8100, 0.9710, 0.8010, 0.7480, 0.7880, 0.9700, 0.4310, 0.9660, 0.9410, 0.9320
+Epoch 24/40
+----------
+step: 0, train loss: 0.4840, train acc: 0.8438
+step: 100, train loss: 0.3831, train acc: 0.8125
+step: 200, train loss: 0.3125, train acc: 0.9375
+step: 300, train loss: 0.4871, train acc: 0.8281
+step: 400, train loss: 0.5300, train acc: 0.8438
+step: 500, train loss: 0.5733, train acc: 0.7812
+step: 600, train loss: 0.3504, train acc: 0.8906
+step: 700, train loss: 0.4725, train acc: 0.8438
+step: 800, train loss: 0.3531, train acc: 0.9375
+step: 900, train loss: 0.4669, train acc: 0.8281
+Loss is:0.4713, Train Accuracy is:85.92%, Test Accuracy is:84.13%, {'accuracy': 0.8413, 'epoch': 17}
+0.8637, 0.9815, 0.8093, 0.8605, 0.7497, 0.9672, 0.4792, 0.9555, 0.9738, 0.9513
+0.8240, 0.9690, 0.8190, 0.8080, 0.7010, 0.9450, 0.4750, 0.9670, 0.9740, 0.9310
+Epoch 25/40
+----------
+step: 0, train loss: 0.4567, train acc: 0.8750
+step: 100, train loss: 0.3343, train acc: 0.9062
+step: 200, train loss: 0.3422, train acc: 0.8906
+step: 300, train loss: 0.4229, train acc: 0.8594
+step: 400, train loss: 0.6191, train acc: 0.8594
+step: 500, train loss: 0.3902, train acc: 0.8125
+step: 600, train loss: 0.2849, train acc: 0.8750
+step: 700, train loss: 0.4094, train acc: 0.8125
+step: 800, train loss: 0.7764, train acc: 0.8125
+step: 900, train loss: 0.5036, train acc: 0.8438
+Loss is:0.4610, Train Accuracy is:86.06%, Test Accuracy is:84.32%, {'accuracy': 0.8432, 'epoch': 25}
+0.8648, 0.9822, 0.8103, 0.8662, 0.7528, 0.9665, 0.4772, 0.9568, 0.9775, 0.9518
+0.8870, 0.9700, 0.7250, 0.8070, 0.7330, 0.9730, 0.4800, 0.9490, 0.9670, 0.9410
+Epoch 26/40
+----------
+step: 0, train loss: 0.3538, train acc: 0.8750
+step: 100, train loss: 0.3424, train acc: 0.8906
+step: 200, train loss: 0.2932, train acc: 0.9531
+step: 300, train loss: 0.4904, train acc: 0.8125
+step: 400, train loss: 0.2955, train acc: 0.9219
+step: 500, train loss: 0.3587, train acc: 0.8438
+step: 600, train loss: 0.2571, train acc: 0.8906
+step: 700, train loss: 0.4333, train acc: 0.8750
+step: 800, train loss: 0.6724, train acc: 0.8125
+step: 900, train loss: 0.6981, train acc: 0.8594
+Loss is:0.4472, Train Accuracy is:86.55%, Test Accuracy is:83.10%, {'accuracy': 0.8432, 'epoch': 25}
+0.8678, 0.9848, 0.8070, 0.8703, 0.7588, 0.9675, 0.5030, 0.9592, 0.9787, 0.9578
+0.8350, 0.9540, 0.8370, 0.7910, 0.7140, 0.9670, 0.3700, 0.9620, 0.9410, 0.9390
+Epoch 27/40
+----------
+step: 0, train loss: 0.3757, train acc: 0.8750
+step: 100, train loss: 0.5033, train acc: 0.9062
+step: 200, train loss: 0.4116, train acc: 0.7969
+step: 300, train loss: 0.4037, train acc: 0.8594
+step: 400, train loss: 0.3533, train acc: 0.8281
+step: 500, train loss: 0.4989, train acc: 0.8750
+step: 600, train loss: 0.2777, train acc: 0.9375
+step: 700, train loss: 0.3681, train acc: 0.8438
+step: 800, train loss: 0.5833, train acc: 0.8906
+step: 900, train loss: 0.5808, train acc: 0.7500
+Loss is:0.4918, Train Accuracy is:85.57%, Test Accuracy is:84.01%, {'accuracy': 0.8432, 'epoch': 25}
+0.8617, 0.9787, 0.7942, 0.8573, 0.7520, 0.9602, 0.4805, 0.9515, 0.9692, 0.9515
+0.8300, 0.9660, 0.7770, 0.8890, 0.7410, 0.9420, 0.4000, 0.9670, 0.9420, 0.9470
+Epoch 28/40
+----------
+step: 0, train loss: 0.3358, train acc: 0.9062
+step: 100, train loss: 0.3089, train acc: 0.8594
+step: 200, train loss: 0.6331, train acc: 0.8125
+step: 300, train loss: 0.2072, train acc: 0.8750
+step: 400, train loss: 0.9273, train acc: 0.8750
+step: 500, train loss: 0.3134, train acc: 0.9062
+step: 600, train loss: 0.5092, train acc: 0.8281
+step: 700, train loss: 0.4733, train acc: 0.8281
+step: 800, train loss: 0.4131, train acc: 0.8125
+step: 900, train loss: 0.3478, train acc: 0.9062
+Loss is:0.4375, Train Accuracy is:86.77%, Test Accuracy is:84.81%, {'accuracy': 0.8481, 'epoch': 28}
+0.8742, 0.9850, 0.8140, 0.8632, 0.7583, 0.9722, 0.5067, 0.9627, 0.9827, 0.9585
+0.8440, 0.9690, 0.8090, 0.8300, 0.7410, 0.9330, 0.4690, 0.9730, 0.9630, 0.9500
+Epoch 29/40
+----------
+step: 0, train loss: 0.4338, train acc: 0.8281
+step: 100, train loss: 0.4345, train acc: 0.8750
+step: 200, train loss: 0.3264, train acc: 0.9375
+step: 300, train loss: 0.8296, train acc: 0.7031
+step: 400, train loss: 0.2884, train acc: 0.9375
+step: 500, train loss: 0.3830, train acc: 0.8594
+step: 600, train loss: 0.3667, train acc: 0.9062
+step: 700, train loss: 0.6689, train acc: 0.8125
+step: 800, train loss: 0.3599, train acc: 0.8594
+step: 900, train loss: 0.3154, train acc: 0.9062
+Loss is:0.4497, Train Accuracy is:86.62%, Test Accuracy is:84.55%, {'accuracy': 0.8481, 'epoch': 28}
+0.8632, 0.9848, 0.8168, 0.8615, 0.7460, 0.9712, 0.5243, 0.9583, 0.9790, 0.9568
+0.8320, 0.9740, 0.7450, 0.7850, 0.7880, 0.9510, 0.5170, 0.9640, 0.9520, 0.9470
+Epoch 30/40
+----------
+step: 0, train loss: 0.3596, train acc: 0.8438
+step: 100, train loss: 0.4674, train acc: 0.8438
+step: 200, train loss: 0.3932, train acc: 0.8438
+step: 300, train loss: 0.4431, train acc: 0.8906
+step: 400, train loss: 0.3371, train acc: 0.8750
+step: 500, train loss: 0.3327, train acc: 0.9062
+step: 600, train loss: 0.5571, train acc: 0.8125
+step: 700, train loss: 0.7249, train acc: 0.8125
+step: 800, train loss: 0.3524, train acc: 0.8281
+step: 900, train loss: 0.3556, train acc: 0.9219
+Loss is:0.4330, Train Accuracy is:86.92%, Test Accuracy is:84.74%, {'accuracy': 0.8481, 'epoch': 28}
+0.8748, 0.9853, 0.8152, 0.8688, 0.7648, 0.9720, 0.5112, 0.9622, 0.9797, 0.9578
+0.8570, 0.9720, 0.7910, 0.7860, 0.7110, 0.9630, 0.5490, 0.9610, 0.9540, 0.9300
+Epoch 31/40
+----------
+step: 0, train loss: 0.3536, train acc: 0.9219
+step: 100, train loss: 0.3973, train acc: 0.9062
+step: 200, train loss: 0.2747, train acc: 0.8594
+step: 300, train loss: 0.6188, train acc: 0.7969
+step: 400, train loss: 0.3672, train acc: 0.9219
+step: 500, train loss: 0.5704, train acc: 0.8750
+step: 600, train loss: 0.6985, train acc: 0.7969
+step: 700, train loss: 0.4186, train acc: 0.8438
+step: 800, train loss: 0.5606, train acc: 0.7969
+step: 900, train loss: 0.5050, train acc: 0.8438
+Loss is:0.4603, Train Accuracy is:86.33%, Test Accuracy is:83.23%, {'accuracy': 0.8481, 'epoch': 28}
+0.8655, 0.9852, 0.8060, 0.8625, 0.7612, 0.9673, 0.4988, 0.9573, 0.9758, 0.9537
+0.8490, 0.9660, 0.7900, 0.8140, 0.7360, 0.9420, 0.3710, 0.9590, 0.9520, 0.9440
+Epoch 32/40
+----------
+step: 0, train loss: 0.4606, train acc: 0.8281
+step: 100, train loss: 0.4398, train acc: 0.8594
+step: 200, train loss: 0.2788, train acc: 0.9375
+step: 300, train loss: 0.2597, train acc: 0.9219
+step: 400, train loss: 0.7337, train acc: 0.7812
+step: 500, train loss: 0.4956, train acc: 0.8750
+step: 600, train loss: 0.3993, train acc: 0.8594
+step: 700, train loss: 0.9382, train acc: 0.8125
+step: 800, train loss: 0.5587, train acc: 0.7969
+step: 900, train loss: 0.3767, train acc: 0.8594
+Loss is:0.4384, Train Accuracy is:86.93%, Test Accuracy is:81.91%, {'accuracy': 0.8481, 'epoch': 28}
+0.8700, 0.9842, 0.8123, 0.8623, 0.7683, 0.9728, 0.5198, 0.9640, 0.9808, 0.9580
+0.7850, 0.9690, 0.8740, 0.6960, 0.7200, 0.9530, 0.3920, 0.9700, 0.8940, 0.9380
+Epoch 33/40
+----------
+step: 0, train loss: 0.6030, train acc: 0.8594
+step: 100, train loss: 0.3400, train acc: 0.9062
+step: 200, train loss: 0.2226, train acc: 0.9375
+step: 300, train loss: 0.5303, train acc: 0.8125
+step: 400, train loss: 0.5453, train acc: 0.8438
+step: 500, train loss: 0.5962, train acc: 0.7656
+step: 600, train loss: 0.3015, train acc: 0.9062
+step: 700, train loss: 0.2739, train acc: 0.8906
+step: 800, train loss: 0.3195, train acc: 0.8906
+step: 900, train loss: 0.8272, train acc: 0.7344
+Loss is:0.4205, Train Accuracy is:87.26%, Test Accuracy is:84.27%, {'accuracy': 0.8481, 'epoch': 28}
+0.8733, 0.9870, 0.8143, 0.8725, 0.7652, 0.9727, 0.5373, 0.9620, 0.9828, 0.9592
+0.8110, 0.9740, 0.8420, 0.7770, 0.7110, 0.9670, 0.4860, 0.9650, 0.9690, 0.9250
+Epoch 34/40
+----------
+step: 0, train loss: 0.4129, train acc: 0.8438
+step: 100, train loss: 0.3118, train acc: 0.9219
+step: 200, train loss: 0.3059, train acc: 0.9062
+step: 300, train loss: 1.4505, train acc: 0.7812
+step: 400, train loss: 0.2960, train acc: 0.8594
+step: 500, train loss: 0.2799, train acc: 0.9531
+step: 600, train loss: 0.5355, train acc: 0.7969
+step: 700, train loss: 0.2560, train acc: 0.9219
+step: 800, train loss: 0.3357, train acc: 0.9219
+step: 900, train loss: 0.2850, train acc: 0.8750
+Loss is:0.4305, Train Accuracy is:86.94%, Test Accuracy is:84.57%, {'accuracy': 0.8481, 'epoch': 28}
+0.8633, 0.9860, 0.8130, 0.8663, 0.7613, 0.9688, 0.5380, 0.9600, 0.9798, 0.9577
+0.8390, 0.9650, 0.8170, 0.8360, 0.7410, 0.9550, 0.4480, 0.9470, 0.9580, 0.9510
+Epoch 35/40
+----------
+step: 0, train loss: 0.5500, train acc: 0.8750
+step: 100, train loss: 0.4084, train acc: 0.8750
+step: 200, train loss: 0.3497, train acc: 0.9375
+step: 300, train loss: 0.4552, train acc: 0.8281
+step: 400, train loss: 0.2081, train acc: 0.9219
+step: 500, train loss: 0.6604, train acc: 0.8125
+step: 600, train loss: 0.4714, train acc: 0.8750
+step: 700, train loss: 0.7310, train acc: 0.8438
+step: 800, train loss: 0.2728, train acc: 0.9375
+step: 900, train loss: 0.2677, train acc: 0.9219
+Loss is:0.4230, Train Accuracy is:87.43%, Test Accuracy is:85.30%, {'accuracy': 0.853, 'epoch': 35}
+0.8767, 0.9877, 0.8167, 0.8700, 0.7748, 0.9720, 0.5460, 0.9608, 0.9822, 0.9562
+0.7760, 0.9800, 0.8020, 0.7970, 0.7650, 0.9590, 0.5650, 0.9480, 0.9700, 0.9680
+Epoch 36/40
+----------
+step: 0, train loss: 0.2973, train acc: 0.8750
+step: 100, train loss: 0.3515, train acc: 0.9375
+step: 200, train loss: 0.3852, train acc: 0.8906
+step: 300, train loss: 0.2390, train acc: 0.9062
+step: 400, train loss: 0.4313, train acc: 0.8906
+step: 500, train loss: 0.1958, train acc: 0.9375
+step: 600, train loss: 0.3338, train acc: 0.8906
+step: 700, train loss: 0.5807, train acc: 0.8281
+step: 800, train loss: 0.8291, train acc: 0.8281
+step: 900, train loss: 0.5090, train acc: 0.8438
+Loss is:0.4284, Train Accuracy is:87.11%, Test Accuracy is:85.07%, {'accuracy': 0.853, 'epoch': 35}
+0.8693, 0.9857, 0.8110, 0.8672, 0.7668, 0.9723, 0.5363, 0.9622, 0.9810, 0.9593
+0.8760, 0.9650, 0.7230, 0.8650, 0.7860, 0.9530, 0.4640, 0.9660, 0.9660, 0.9430
+Epoch 37/40
+----------
+step: 0, train loss: 0.3090, train acc: 0.8750
+step: 100, train loss: 0.3461, train acc: 0.8438
+step: 200, train loss: 0.5166, train acc: 0.8906
+step: 300, train loss: 0.3164, train acc: 0.9062
+step: 400, train loss: 0.4058, train acc: 0.8750
+step: 500, train loss: 0.4048, train acc: 0.8125
+step: 600, train loss: 0.4930, train acc: 0.8281
+step: 700, train loss: 0.3974, train acc: 0.8750
+step: 800, train loss: 0.3193, train acc: 0.8750
+step: 900, train loss: 0.2857, train acc: 0.9375
+Loss is:0.4147, Train Accuracy is:87.59%, Test Accuracy is:83.33%, {'accuracy': 0.853, 'epoch': 35}
+0.8745, 0.9877, 0.8157, 0.8742, 0.7698, 0.9743, 0.5575, 0.9628, 0.9825, 0.9602
+0.8040, 0.9620, 0.8070, 0.7050, 0.7760, 0.9570, 0.4620, 0.9740, 0.9570, 0.9290
+Epoch 38/40
+----------
+step: 0, train loss: 0.4495, train acc: 0.8906
+step: 100, train loss: 0.3691, train acc: 0.9062
+step: 200, train loss: 0.4342, train acc: 0.8750
+step: 300, train loss: 0.4889, train acc: 0.8438
+step: 400, train loss: 0.5643, train acc: 0.7812
+step: 500, train loss: 0.2411, train acc: 0.8906
+step: 600, train loss: 0.4208, train acc: 0.9219
+step: 700, train loss: 0.4717, train acc: 0.8438
+step: 800, train loss: 0.3896, train acc: 0.8438
+step: 900, train loss: 0.5672, train acc: 0.7812
+Loss is:0.4658, Train Accuracy is:86.53%, Test Accuracy is:82.71%, {'accuracy': 0.853, 'epoch': 35}
+0.8645, 0.9825, 0.8048, 0.8638, 0.7655, 0.9633, 0.5288, 0.9510, 0.9758, 0.9533
+0.8030, 0.9630, 0.7090, 0.7580, 0.7820, 0.9220, 0.4670, 0.9540, 0.9550, 0.9580
+Epoch 39/40
+----------
+step: 0, train loss: 0.3391, train acc: 0.8750
+step: 100, train loss: 0.3481, train acc: 0.8438
+step: 200, train loss: 0.3941, train acc: 0.8281
+step: 300, train loss: 0.5883, train acc: 0.8750
+step: 400, train loss: 0.2771, train acc: 0.8750
+step: 500, train loss: 0.4152, train acc: 0.8281
+step: 600, train loss: 0.3031, train acc: 0.8906
+step: 700, train loss: 0.4209, train acc: 0.8906
+step: 800, train loss: 0.3308, train acc: 0.8594
+step: 900, train loss: 0.3502, train acc: 0.8750
+Loss is:0.4202, Train Accuracy is:87.31%, Test Accuracy is:85.34%, {'accuracy': 0.8534, 'epoch': 39}
+0.8703, 0.9843, 0.8207, 0.8748, 0.7617, 0.9727, 0.5398, 0.9650, 0.9802, 0.9615
+0.8640, 0.9570, 0.7770, 0.8600, 0.7760, 0.9480, 0.4660, 0.9740, 0.9640, 0.9480
+Epoch 40/40
+----------
+step: 0, train loss: 0.2227, train acc: 0.9531
+step: 100, train loss: 0.4507, train acc: 0.7969
+step: 200, train loss: 0.4184, train acc: 0.8594
+step: 300, train loss: 0.3459, train acc: 0.8750
+step: 400, train loss: 0.6123, train acc: 0.8750
+step: 500, train loss: 0.5380, train acc: 0.8438
+step: 600, train loss: 0.2960, train acc: 0.8750
+step: 700, train loss: 0.2791, train acc: 0.9219
+step: 800, train loss: 0.3881, train acc: 0.9062
+step: 900, train loss: 0.3382, train acc: 0.9219
+Loss is:0.3971, Train Accuracy is:87.83%, Test Accuracy is:84.72%, {'accuracy': 0.8534, 'epoch': 39}
+0.8662, 0.9895, 0.8145, 0.8815, 0.7777, 0.9780, 0.5642, 0.9668, 0.9842, 0.9608
+0.8260, 0.9770, 0.7700, 0.7510, 0.7280, 0.9660, 0.6110, 0.9440, 0.9350, 0.9640
+Finish training!
+The best accuracy model is: {'accuracy': 0.8534, 'epoch': 39}
+weight_norm: tensor([0.4956, 0.3157, 0.4721, 0.5997, 0.6960, 0.5759, 0.5668, 0.3923, 0.4066,
+        0.3803])

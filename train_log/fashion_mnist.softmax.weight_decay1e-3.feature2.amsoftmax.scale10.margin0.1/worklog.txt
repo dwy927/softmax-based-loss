@@ -1,0 +1,619 @@
+Model(
+  (backbone): Sequential(
+    (0): Conv2d(1, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3))
+    (1): Conv2d(64, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (2): ReLU()
+    (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (4): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+    (5): ReLU()
+    (6): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): ReLU()
+    (8): AvgPool2d(kernel_size=4, stride=4, padding=0)
+  )
+  (feature): Linear(in_features=512, out_features=2, bias=True)
+  (pred): Linear(in_features=2, out_features=10, bias=False)
+)
+Epoch 1/40
+----------
+step: 0, train arcface loss: 10.6068, ce loss: 9.6955, train acc: 0.1250
+step: 100, train arcface loss: 5.1808, ce loss: 4.2926, train acc: 0.2188
+step: 200, train arcface loss: 4.2218, ce loss: 3.3434, train acc: 0.2656
+step: 300, train arcface loss: 2.9009, ce loss: 2.0445, train acc: 0.3281
+step: 400, train arcface loss: 3.4635, ce loss: 2.5938, train acc: 0.2812
+step: 500, train arcface loss: 2.8002, ce loss: 1.9765, train acc: 0.2969
+step: 600, train arcface loss: 2.1664, ce loss: 1.4108, train acc: 0.4531
+step: 700, train arcface loss: 2.0400, ce loss: 1.2890, train acc: 0.4062
+step: 800, train arcface loss: 1.8757, ce loss: 1.1701, train acc: 0.3906
+step: 900, train arcface loss: 2.5730, ce loss: 1.8377, train acc: 0.2969
+Loss is:3.0345, Train Accuracy is:28.06%, Test Accuracy is:38.47%, {'accuracy': 0.3847, 'epoch': 1}
+0.3328, 0.2022, 0.1678, 0.1870, 0.3123, 0.2642, 0.1263, 0.5073, 0.0600, 0.6455
+0.9000, 0.0000, 0.0000, 0.0000, 0.9550, 0.0020, 0.0000, 0.9660, 0.1040, 0.9200
+Epoch 2/40
+----------
+step: 0, train arcface loss: 1.9374, ce loss: 1.2022, train acc: 0.4062
+step: 100, train arcface loss: 1.9240, ce loss: 1.2184, train acc: 0.4062
+step: 200, train arcface loss: 1.9026, ce loss: 1.1999, train acc: 0.3594
+step: 300, train arcface loss: 2.2717, ce loss: 1.5463, train acc: 0.4062
+step: 400, train arcface loss: 1.6902, ce loss: 1.0397, train acc: 0.4844
+step: 500, train arcface loss: 1.7523, ce loss: 1.0904, train acc: 0.5000
+step: 600, train arcface loss: 1.5574, ce loss: 0.9301, train acc: 0.6562
+step: 700, train arcface loss: 1.8444, ce loss: 1.1543, train acc: 0.4219
+step: 800, train arcface loss: 1.5019, ce loss: 0.9155, train acc: 0.6250
+step: 900, train arcface loss: 1.7995, ce loss: 1.1624, train acc: 0.4844
+Loss is:1.8460, Train Accuracy is:46.29%, Test Accuracy is:50.51%, {'accuracy': 0.5051, 'epoch': 2}
+0.4975, 0.0988, 0.4625, 0.2985, 0.0950, 0.3740, 0.3170, 0.9222, 0.6318, 0.9317
+0.8160, 0.0020, 0.0130, 0.0010, 0.0000, 0.8400, 0.7380, 0.8830, 0.8110, 0.9470
+Epoch 3/40
+----------
+step: 0, train arcface loss: 1.8762, ce loss: 1.2133, train acc: 0.4688
+step: 100, train arcface loss: 1.2870, ce loss: 0.7660, train acc: 0.6094
+step: 200, train arcface loss: 1.4959, ce loss: 0.9174, train acc: 0.6094
+step: 300, train arcface loss: 1.4093, ce loss: 0.8706, train acc: 0.6719
+step: 400, train arcface loss: 1.1854, ce loss: 0.7237, train acc: 0.7656
+step: 500, train arcface loss: 1.2685, ce loss: 0.8449, train acc: 0.7812
+step: 600, train arcface loss: 1.1618, ce loss: 0.7697, train acc: 0.7188
+step: 700, train arcface loss: 1.3012, ce loss: 0.8428, train acc: 0.7656
+step: 800, train arcface loss: 1.0962, ce loss: 0.6519, train acc: 0.7188
+step: 900, train arcface loss: 1.2236, ce loss: 0.7654, train acc: 0.7188
+Loss is:1.3053, Train Accuracy is:68.76%, Test Accuracy is:76.26%, {'accuracy': 0.7626, 'epoch': 3}
+0.8695, 0.7823, 0.2530, 0.5350, 0.3808, 0.9142, 0.3528, 0.9098, 0.9368, 0.9413
+0.8370, 0.9430, 0.4350, 0.8080, 0.5460, 0.8980, 0.2920, 0.9520, 0.9650, 0.9500
+Epoch 4/40
+----------
+step: 0, train arcface loss: 1.3826, ce loss: 0.9703, train acc: 0.7344
+step: 100, train arcface loss: 1.5768, ce loss: 1.0852, train acc: 0.7031
+step: 200, train arcface loss: 1.1986, ce loss: 0.7315, train acc: 0.6250
+step: 300, train arcface loss: 1.3091, ce loss: 0.8968, train acc: 0.7969
+step: 400, train arcface loss: 0.9646, ce loss: 0.5533, train acc: 0.8125
+step: 500, train arcface loss: 1.1338, ce loss: 0.6508, train acc: 0.7031
+step: 600, train arcface loss: 0.9737, ce loss: 0.5772, train acc: 0.7656
+step: 700, train arcface loss: 1.1582, ce loss: 0.7279, train acc: 0.7656
+step: 800, train arcface loss: 1.0663, ce loss: 0.6073, train acc: 0.7344
+step: 900, train arcface loss: 1.0202, ce loss: 0.5897, train acc: 0.7812
+Loss is:1.1397, Train Accuracy is:75.32%, Test Accuracy is:77.69%, {'accuracy': 0.7769, 'epoch': 4}
+0.8562, 0.9550, 0.6348, 0.8392, 0.2318, 0.9275, 0.2735, 0.9148, 0.9490, 0.9505
+0.8620, 0.9580, 0.3850, 0.8570, 0.5690, 0.8930, 0.3880, 0.9380, 0.9560, 0.9630
+Epoch 5/40
+----------
+step: 0, train arcface loss: 0.9450, ce loss: 0.5511, train acc: 0.8438
+step: 100, train arcface loss: 1.3185, ce loss: 0.8110, train acc: 0.7500
+step: 200, train arcface loss: 0.9076, ce loss: 0.4980, train acc: 0.8281
+step: 300, train arcface loss: 1.1157, ce loss: 0.6809, train acc: 0.7344
+step: 400, train arcface loss: 1.0706, ce loss: 0.6146, train acc: 0.7812
+step: 500, train arcface loss: 1.1932, ce loss: 0.7317, train acc: 0.7500
+step: 600, train arcface loss: 1.0343, ce loss: 0.6022, train acc: 0.8125
+step: 700, train arcface loss: 1.2903, ce loss: 0.8122, train acc: 0.7656
+step: 800, train arcface loss: 1.0280, ce loss: 0.6265, train acc: 0.8281
+step: 900, train arcface loss: 1.1874, ce loss: 0.7054, train acc: 0.6875
+Loss is:1.0763, Train Accuracy is:80.06%, Test Accuracy is:80.30%, {'accuracy': 0.803, 'epoch': 5}
+0.8648, 0.9637, 0.7808, 0.8605, 0.4325, 0.9362, 0.3333, 0.9235, 0.9557, 0.9553
+0.8810, 0.9700, 0.8540, 0.8110, 0.4080, 0.9640, 0.3140, 0.9250, 0.9630, 0.9400
+Epoch 6/40
+----------
+step: 0, train arcface loss: 1.1605, ce loss: 0.7415, train acc: 0.7969
+step: 100, train arcface loss: 1.5154, ce loss: 1.0200, train acc: 0.7656
+step: 200, train arcface loss: 0.9687, ce loss: 0.5318, train acc: 0.8281
+step: 300, train arcface loss: 0.9161, ce loss: 0.5212, train acc: 0.7812
+step: 400, train arcface loss: 0.8953, ce loss: 0.4792, train acc: 0.8906
+step: 500, train arcface loss: 0.8033, ce loss: 0.4545, train acc: 0.8594
+step: 600, train arcface loss: 1.1916, ce loss: 0.7225, train acc: 0.8438
+step: 700, train arcface loss: 0.9587, ce loss: 0.5580, train acc: 0.7812
+step: 800, train arcface loss: 1.1620, ce loss: 0.7576, train acc: 0.7969
+step: 900, train arcface loss: 1.0422, ce loss: 0.6454, train acc: 0.8281
+Loss is:1.0453, Train Accuracy is:81.64%, Test Accuracy is:80.58%, {'accuracy': 0.8058, 'epoch': 6}
+0.8723, 0.9692, 0.8182, 0.8663, 0.5158, 0.9473, 0.3333, 0.9253, 0.9573, 0.9583
+0.8580, 0.9660, 0.8570, 0.8270, 0.4410, 0.9530, 0.3020, 0.9690, 0.9610, 0.9240
+Epoch 7/40
+----------
+step: 0, train arcface loss: 1.0060, ce loss: 0.5831, train acc: 0.7656
+step: 100, train arcface loss: 0.8672, ce loss: 0.5000, train acc: 0.9062
+step: 200, train arcface loss: 0.7576, ce loss: 0.4027, train acc: 0.9062
+step: 300, train arcface loss: 1.1607, ce loss: 0.7027, train acc: 0.7500
+step: 400, train arcface loss: 0.8741, ce loss: 0.4858, train acc: 0.8281
+step: 500, train arcface loss: 0.8479, ce loss: 0.4629, train acc: 0.9062
+step: 600, train arcface loss: 0.8872, ce loss: 0.4794, train acc: 0.9062
+step: 700, train arcface loss: 0.9176, ce loss: 0.5400, train acc: 0.8281
+step: 800, train arcface loss: 1.1961, ce loss: 0.7271, train acc: 0.7969
+step: 900, train arcface loss: 1.1452, ce loss: 0.7034, train acc: 0.7656
+Loss is:1.0181, Train Accuracy is:82.55%, Test Accuracy is:82.83%, {'accuracy': 0.8283, 'epoch': 7}
+0.8733, 0.9707, 0.8268, 0.8702, 0.5568, 0.9560, 0.3422, 0.9425, 0.9612, 0.9552
+0.8710, 0.9570, 0.7770, 0.8360, 0.6190, 0.9430, 0.4160, 0.9410, 0.9590, 0.9640
+Epoch 8/40
+----------
+step: 0, train arcface loss: 0.9588, ce loss: 0.5762, train acc: 0.9062
+step: 100, train arcface loss: 0.8154, ce loss: 0.4419, train acc: 0.8594
+step: 200, train arcface loss: 0.8065, ce loss: 0.4216, train acc: 0.8281
+step: 300, train arcface loss: 1.1708, ce loss: 0.7554, train acc: 0.7812
+step: 400, train arcface loss: 0.9069, ce loss: 0.5051, train acc: 0.7656
+step: 500, train arcface loss: 0.8308, ce loss: 0.4507, train acc: 0.9062
+step: 600, train arcface loss: 0.9523, ce loss: 0.5396, train acc: 0.7812
+step: 700, train arcface loss: 1.3053, ce loss: 0.8523, train acc: 0.7656
+step: 800, train arcface loss: 1.0982, ce loss: 0.6415, train acc: 0.7969
+step: 900, train arcface loss: 1.0459, ce loss: 0.6374, train acc: 0.8125
+Loss is:1.0089, Train Accuracy is:83.06%, Test Accuracy is:82.22%, {'accuracy': 0.8283, 'epoch': 7}
+0.8745, 0.9708, 0.8332, 0.8770, 0.5922, 0.9568, 0.3370, 0.9458, 0.9620, 0.9567
+0.8510, 0.9600, 0.8440, 0.8340, 0.5680, 0.9730, 0.3230, 0.9530, 0.9750, 0.9410
+Epoch 9/40
+----------
+step: 0, train arcface loss: 0.9714, ce loss: 0.5510, train acc: 0.7656
+step: 100, train arcface loss: 0.9507, ce loss: 0.5365, train acc: 0.8594
+step: 200, train arcface loss: 0.7920, ce loss: 0.4161, train acc: 0.8906
+step: 300, train arcface loss: 1.0455, ce loss: 0.6183, train acc: 0.8125
+step: 400, train arcface loss: 1.0388, ce loss: 0.5825, train acc: 0.7969
+step: 500, train arcface loss: 1.1190, ce loss: 0.7171, train acc: 0.8281
+step: 600, train arcface loss: 1.1361, ce loss: 0.6829, train acc: 0.7812
+step: 700, train arcface loss: 1.1984, ce loss: 0.7630, train acc: 0.8438
+step: 800, train arcface loss: 0.8611, ce loss: 0.4952, train acc: 0.9375
+step: 900, train arcface loss: 0.8353, ce loss: 0.4570, train acc: 0.8906
+Loss is:0.9941, Train Accuracy is:83.95%, Test Accuracy is:83.69%, {'accuracy': 0.8369, 'epoch': 9}
+0.8830, 0.9737, 0.8390, 0.8820, 0.6125, 0.9588, 0.3770, 0.9465, 0.9655, 0.9565
+0.8850, 0.9670, 0.7850, 0.8610, 0.7330, 0.9640, 0.3140, 0.9410, 0.9660, 0.9530
+Epoch 10/40
+----------
+step: 0, train arcface loss: 0.9972, ce loss: 0.6218, train acc: 0.9062
+step: 100, train arcface loss: 1.1685, ce loss: 0.7182, train acc: 0.8125
+step: 200, train arcface loss: 0.8469, ce loss: 0.4696, train acc: 0.8906
+step: 300, train arcface loss: 0.9912, ce loss: 0.5798, train acc: 0.9062
+step: 400, train arcface loss: 0.8791, ce loss: 0.4770, train acc: 0.8750
+step: 500, train arcface loss: 1.1457, ce loss: 0.7013, train acc: 0.7812
+step: 600, train arcface loss: 0.8340, ce loss: 0.4691, train acc: 0.8438
+step: 700, train arcface loss: 0.8475, ce loss: 0.4611, train acc: 0.8594
+step: 800, train arcface loss: 1.1171, ce loss: 0.6728, train acc: 0.8281
+step: 900, train arcface loss: 0.6976, ce loss: 0.3531, train acc: 0.9531
+Loss is:0.9973, Train Accuracy is:83.76%, Test Accuracy is:82.08%, {'accuracy': 0.8369, 'epoch': 9}
+0.8762, 0.9723, 0.8303, 0.8775, 0.6322, 0.9560, 0.3692, 0.9422, 0.9623, 0.9582
+0.8830, 0.9590, 0.8280, 0.8690, 0.6470, 0.8780, 0.2900, 0.9850, 0.9380, 0.9310
+Epoch 11/40
+----------
+step: 0, train arcface loss: 1.1378, ce loss: 0.6723, train acc: 0.7969
+step: 100, train arcface loss: 0.7992, ce loss: 0.4210, train acc: 0.8438
+step: 200, train arcface loss: 1.0789, ce loss: 0.6696, train acc: 0.8281
+step: 300, train arcface loss: 0.9475, ce loss: 0.5460, train acc: 0.9062
+step: 400, train arcface loss: 0.7589, ce loss: 0.4018, train acc: 0.9062
+step: 500, train arcface loss: 0.7569, ce loss: 0.3990, train acc: 0.8906
+step: 600, train arcface loss: 0.9427, ce loss: 0.5221, train acc: 0.8594
+step: 700, train arcface loss: 1.1999, ce loss: 0.7535, train acc: 0.7969
+step: 800, train arcface loss: 0.8645, ce loss: 0.4588, train acc: 0.8438
+step: 900, train arcface loss: 1.2858, ce loss: 0.8270, train acc: 0.8125
+Loss is:0.9828, Train Accuracy is:84.34%, Test Accuracy is:82.70%, {'accuracy': 0.8369, 'epoch': 9}
+0.8835, 0.9723, 0.8360, 0.8832, 0.6265, 0.9580, 0.4015, 0.9432, 0.9672, 0.9623
+0.8500, 0.9670, 0.8850, 0.8340, 0.5990, 0.9760, 0.3060, 0.9240, 0.9680, 0.9610
+Epoch 12/40
+----------
+step: 0, train arcface loss: 0.8953, ce loss: 0.4921, train acc: 0.8750
+step: 100, train arcface loss: 0.8656, ce loss: 0.4834, train acc: 0.8906
+step: 200, train arcface loss: 0.9561, ce loss: 0.5188, train acc: 0.7969
+step: 300, train arcface loss: 1.0653, ce loss: 0.6393, train acc: 0.8594
+step: 400, train arcface loss: 1.0298, ce loss: 0.5956, train acc: 0.7656
+step: 500, train arcface loss: 0.9387, ce loss: 0.5242, train acc: 0.8750
+step: 600, train arcface loss: 1.1253, ce loss: 0.7257, train acc: 0.8281
+step: 700, train arcface loss: 1.1076, ce loss: 0.6461, train acc: 0.8281
+step: 800, train arcface loss: 0.7838, ce loss: 0.4179, train acc: 0.9062
+step: 900, train arcface loss: 1.0007, ce loss: 0.5786, train acc: 0.8438
+Loss is:0.9794, Train Accuracy is:84.91%, Test Accuracy is:83.39%, {'accuracy': 0.8369, 'epoch': 9}
+0.8848, 0.9732, 0.8378, 0.8855, 0.6763, 0.9568, 0.4023, 0.9462, 0.9678, 0.9597
+0.8710, 0.9650, 0.6990, 0.7830, 0.7810, 0.9810, 0.4830, 0.8460, 0.9660, 0.9640
+Epoch 13/40
+----------
+step: 0, train arcface loss: 0.8906, ce loss: 0.4864, train acc: 0.7812
+step: 100, train arcface loss: 0.9159, ce loss: 0.5177, train acc: 0.8750
+step: 200, train arcface loss: 0.7671, ce loss: 0.3927, train acc: 0.9062
+step: 300, train arcface loss: 0.9029, ce loss: 0.5473, train acc: 0.8594
+step: 400, train arcface loss: 1.0635, ce loss: 0.6515, train acc: 0.7969
+step: 500, train arcface loss: 0.7882, ce loss: 0.4185, train acc: 0.9062
+step: 600, train arcface loss: 0.8730, ce loss: 0.4915, train acc: 0.8906
+step: 700, train arcface loss: 0.8225, ce loss: 0.4495, train acc: 0.8750
+step: 800, train arcface loss: 0.7520, ce loss: 0.3977, train acc: 0.9062
+step: 900, train arcface loss: 0.7958, ce loss: 0.4252, train acc: 0.8906
+Loss is:0.9590, Train Accuracy is:85.42%, Test Accuracy is:84.65%, {'accuracy': 0.8465, 'epoch': 13}
+0.8862, 0.9772, 0.8388, 0.8920, 0.6798, 0.9623, 0.4237, 0.9478, 0.9710, 0.9630
+0.8680, 0.9680, 0.8660, 0.8580, 0.7050, 0.9490, 0.3730, 0.9380, 0.9740, 0.9660
+Epoch 14/40
+----------
+step: 0, train arcface loss: 0.8277, ce loss: 0.4674, train acc: 0.8906
+step: 100, train arcface loss: 0.8555, ce loss: 0.4523, train acc: 0.8750
+step: 200, train arcface loss: 0.8435, ce loss: 0.4711, train acc: 0.8438
+step: 300, train arcface loss: 1.0990, ce loss: 0.6830, train acc: 0.8906
+step: 400, train arcface loss: 0.7799, ce loss: 0.4066, train acc: 0.9062
+step: 500, train arcface loss: 0.9364, ce loss: 0.5445, train acc: 0.8281
+step: 600, train arcface loss: 0.7955, ce loss: 0.4421, train acc: 0.8906
+step: 700, train arcface loss: 0.8181, ce loss: 0.4732, train acc: 0.8750
+step: 800, train arcface loss: 0.9539, ce loss: 0.5548, train acc: 0.8750
+step: 900, train arcface loss: 0.7175, ce loss: 0.3726, train acc: 0.9219
+Loss is:0.9522, Train Accuracy is:85.78%, Test Accuracy is:83.29%, {'accuracy': 0.8465, 'epoch': 13}
+0.8865, 0.9778, 0.8420, 0.8920, 0.7075, 0.9647, 0.4252, 0.9482, 0.9705, 0.9637
+0.8210, 0.9640, 0.8320, 0.8910, 0.6930, 0.9610, 0.3060, 0.9340, 0.9640, 0.9630
+Epoch 15/40
+----------
+step: 0, train arcface loss: 0.8227, ce loss: 0.4339, train acc: 0.8906
+step: 100, train arcface loss: 0.9224, ce loss: 0.5102, train acc: 0.8594
+step: 200, train arcface loss: 0.9325, ce loss: 0.5304, train acc: 0.7969
+step: 300, train arcface loss: 0.8985, ce loss: 0.4959, train acc: 0.8594
+step: 400, train arcface loss: 1.0069, ce loss: 0.5533, train acc: 0.8750
+step: 500, train arcface loss: 0.9264, ce loss: 0.5073, train acc: 0.8750
+step: 600, train arcface loss: 0.8194, ce loss: 0.4279, train acc: 0.8750
+step: 700, train arcface loss: 1.0152, ce loss: 0.5755, train acc: 0.8125
+step: 800, train arcface loss: 0.8046, ce loss: 0.4283, train acc: 0.8594
+step: 900, train arcface loss: 1.0471, ce loss: 0.6403, train acc: 0.8594
+Loss is:0.9583, Train Accuracy is:85.78%, Test Accuracy is:83.38%, {'accuracy': 0.8465, 'epoch': 13}
+0.8807, 0.9757, 0.8383, 0.8878, 0.7070, 0.9633, 0.4390, 0.9523, 0.9700, 0.9635
+0.8670, 0.9690, 0.8470, 0.8390, 0.6360, 0.9460, 0.4110, 0.8690, 0.9790, 0.9750
+Epoch 16/40
+----------
+step: 0, train arcface loss: 1.0523, ce loss: 0.6484, train acc: 0.8438
+step: 100, train arcface loss: 0.6736, ce loss: 0.3335, train acc: 0.9375
+step: 200, train arcface loss: 0.9539, ce loss: 0.5697, train acc: 0.8750
+step: 300, train arcface loss: 1.2076, ce loss: 0.7579, train acc: 0.7812
+step: 400, train arcface loss: 0.8887, ce loss: 0.4768, train acc: 0.8594
+step: 500, train arcface loss: 0.7698, ce loss: 0.3980, train acc: 0.9062
+step: 600, train arcface loss: 0.9222, ce loss: 0.5285, train acc: 0.8594
+step: 700, train arcface loss: 0.9660, ce loss: 0.5348, train acc: 0.8438
+step: 800, train arcface loss: 1.1042, ce loss: 0.6773, train acc: 0.7656
+step: 900, train arcface loss: 0.6714, ce loss: 0.3631, train acc: 0.9062
+Loss is:0.9384, Train Accuracy is:86.36%, Test Accuracy is:83.32%, {'accuracy': 0.8465, 'epoch': 13}
+0.8913, 0.9777, 0.8495, 0.8890, 0.7212, 0.9678, 0.4490, 0.9538, 0.9710, 0.9652
+0.8100, 0.9650, 0.8760, 0.8740, 0.7050, 0.9600, 0.2740, 0.9530, 0.9680, 0.9470
+Epoch 17/40
+----------
+step: 0, train arcface loss: 0.9179, ce loss: 0.5203, train acc: 0.8906
+step: 100, train arcface loss: 0.7258, ce loss: 0.3624, train acc: 0.9375
+step: 200, train arcface loss: 1.0793, ce loss: 0.6466, train acc: 0.7812
+step: 300, train arcface loss: 1.1507, ce loss: 0.7232, train acc: 0.7969
+step: 400, train arcface loss: 0.8885, ce loss: 0.5131, train acc: 0.8438
+step: 500, train arcface loss: 0.8676, ce loss: 0.4597, train acc: 0.8750
+step: 600, train arcface loss: 1.1636, ce loss: 0.7147, train acc: 0.7656
+step: 700, train arcface loss: 1.0629, ce loss: 0.6336, train acc: 0.8125
+step: 800, train arcface loss: 0.9883, ce loss: 0.5811, train acc: 0.8750
+step: 900, train arcface loss: 0.7835, ce loss: 0.4130, train acc: 0.8906
+Loss is:0.9830, Train Accuracy is:84.99%, Test Accuracy is:84.52%, {'accuracy': 0.8465, 'epoch': 13}
+0.8815, 0.9745, 0.8353, 0.8885, 0.6918, 0.9550, 0.4143, 0.9432, 0.9625, 0.9522
+0.8130, 0.9800, 0.8310, 0.8810, 0.7270, 0.9610, 0.3930, 0.9480, 0.9610, 0.9570
+Epoch 18/40
+----------
+step: 0, train arcface loss: 1.2514, ce loss: 0.8140, train acc: 0.7500
+step: 100, train arcface loss: 0.9128, ce loss: 0.5080, train acc: 0.8594
+step: 200, train arcface loss: 0.8200, ce loss: 0.4287, train acc: 0.8438
+step: 300, train arcface loss: 1.0597, ce loss: 0.6156, train acc: 0.8125
+step: 400, train arcface loss: 0.7640, ce loss: 0.4237, train acc: 0.9688
+step: 500, train arcface loss: 1.1400, ce loss: 0.7312, train acc: 0.8750
+step: 600, train arcface loss: 1.0220, ce loss: 0.5937, train acc: 0.8750
+step: 700, train arcface loss: 1.1050, ce loss: 0.6696, train acc: 0.8438
+step: 800, train arcface loss: 0.8990, ce loss: 0.4845, train acc: 0.9062
+step: 900, train arcface loss: 1.0130, ce loss: 0.6015, train acc: 0.8906
+Loss is:0.9542, Train Accuracy is:85.97%, Test Accuracy is:84.94%, {'accuracy': 0.8494, 'epoch': 18}
+0.8903, 0.9770, 0.8423, 0.8907, 0.7052, 0.9642, 0.4447, 0.9527, 0.9702, 0.9603
+0.8330, 0.9750, 0.8720, 0.8580, 0.7080, 0.9540, 0.4180, 0.9260, 0.9740, 0.9760
+Epoch 19/40
+----------
+step: 0, train arcface loss: 1.0106, ce loss: 0.5959, train acc: 0.8594
+step: 100, train arcface loss: 0.7084, ce loss: 0.3688, train acc: 0.9219
+step: 200, train arcface loss: 0.9410, ce loss: 0.5158, train acc: 0.8594
+step: 300, train arcface loss: 0.9810, ce loss: 0.5691, train acc: 0.8594
+step: 400, train arcface loss: 1.0647, ce loss: 0.6521, train acc: 0.8594
+step: 500, train arcface loss: 0.8109, ce loss: 0.4227, train acc: 0.8906
+step: 600, train arcface loss: 0.8658, ce loss: 0.4663, train acc: 0.8750
+step: 700, train arcface loss: 1.2687, ce loss: 0.8263, train acc: 0.8281
+step: 800, train arcface loss: 0.9471, ce loss: 0.5261, train acc: 0.8438
+step: 900, train arcface loss: 1.2741, ce loss: 0.8051, train acc: 0.7812
+Loss is:0.9207, Train Accuracy is:86.95%, Test Accuracy is:85.53%, {'accuracy': 0.8553, 'epoch': 19}
+0.8963, 0.9795, 0.8518, 0.8965, 0.7258, 0.9718, 0.4742, 0.9583, 0.9772, 0.9638
+0.8800, 0.9750, 0.8460, 0.8860, 0.6830, 0.9500, 0.4540, 0.9730, 0.9670, 0.9390
+Epoch 20/40
+----------
+step: 0, train arcface loss: 0.7151, ce loss: 0.3614, train acc: 0.9062
+step: 100, train arcface loss: 0.9244, ce loss: 0.5148, train acc: 0.8750
+step: 200, train arcface loss: 0.7864, ce loss: 0.4197, train acc: 0.8750
+step: 300, train arcface loss: 0.9222, ce loss: 0.5347, train acc: 0.8906
+step: 400, train arcface loss: 1.0486, ce loss: 0.5840, train acc: 0.8594
+step: 500, train arcface loss: 0.8638, ce loss: 0.4679, train acc: 0.9062
+step: 600, train arcface loss: 0.8620, ce loss: 0.4529, train acc: 0.8750
+step: 700, train arcface loss: 1.5481, ce loss: 1.1163, train acc: 0.8125
+step: 800, train arcface loss: 0.8266, ce loss: 0.4473, train acc: 0.9062
+step: 900, train arcface loss: 0.9432, ce loss: 0.5621, train acc: 0.8594
+Loss is:0.9195, Train Accuracy is:87.31%, Test Accuracy is:85.07%, {'accuracy': 0.8553, 'epoch': 19}
+0.8970, 0.9790, 0.8493, 0.9040, 0.7440, 0.9715, 0.4832, 0.9598, 0.9760, 0.9675
+0.8670, 0.9760, 0.8590, 0.8920, 0.7080, 0.9490, 0.3720, 0.9480, 0.9760, 0.9600
+Epoch 21/40
+----------
+step: 0, train arcface loss: 0.8157, ce loss: 0.4136, train acc: 0.9219
+step: 100, train arcface loss: 0.8522, ce loss: 0.4563, train acc: 0.8281
+step: 200, train arcface loss: 0.7429, ce loss: 0.3794, train acc: 0.9062
+step: 300, train arcface loss: 1.0928, ce loss: 0.6569, train acc: 0.8281
+step: 400, train arcface loss: 0.7926, ce loss: 0.4138, train acc: 0.9219
+step: 500, train arcface loss: 1.3051, ce loss: 0.8409, train acc: 0.7656
+step: 600, train arcface loss: 0.8408, ce loss: 0.4506, train acc: 0.8594
+step: 700, train arcface loss: 0.8924, ce loss: 0.4990, train acc: 0.8906
+step: 800, train arcface loss: 1.0801, ce loss: 0.6480, train acc: 0.7812
+step: 900, train arcface loss: 1.2192, ce loss: 0.7789, train acc: 0.7969
+Loss is:0.9368, Train Accuracy is:86.50%, Test Accuracy is:86.02%, {'accuracy': 0.8602, 'epoch': 21}
+0.8885, 0.9798, 0.8460, 0.8957, 0.7285, 0.9680, 0.4517, 0.9572, 0.9727, 0.9622
+0.8720, 0.9780, 0.8370, 0.8470, 0.7330, 0.9570, 0.5040, 0.9410, 0.9670, 0.9660
+Epoch 22/40
+----------
+step: 0, train arcface loss: 0.7530, ce loss: 0.3846, train acc: 0.9375
+step: 100, train arcface loss: 0.8918, ce loss: 0.4799, train acc: 0.9062
+step: 200, train arcface loss: 0.8985, ce loss: 0.5281, train acc: 0.8750
+step: 300, train arcface loss: 0.9078, ce loss: 0.4842, train acc: 0.8750
+step: 400, train arcface loss: 0.7738, ce loss: 0.4193, train acc: 0.8906
+step: 500, train arcface loss: 0.9406, ce loss: 0.5277, train acc: 0.9219
+step: 600, train arcface loss: 0.9029, ce loss: 0.5291, train acc: 0.8438
+step: 700, train arcface loss: 1.1385, ce loss: 0.6900, train acc: 0.8438
+step: 800, train arcface loss: 0.8085, ce loss: 0.4241, train acc: 0.8594
+step: 900, train arcface loss: 0.8571, ce loss: 0.4722, train acc: 0.9062
+Loss is:0.9149, Train Accuracy is:87.23%, Test Accuracy is:85.60%, {'accuracy': 0.8602, 'epoch': 21}
+0.8940, 0.9813, 0.8460, 0.9055, 0.7413, 0.9705, 0.4848, 0.9578, 0.9758, 0.9663
+0.8670, 0.9720, 0.8300, 0.8640, 0.7320, 0.9660, 0.4580, 0.9440, 0.9760, 0.9510
+Epoch 23/40
+----------
+step: 0, train arcface loss: 0.9038, ce loss: 0.5019, train acc: 0.8594
+step: 100, train arcface loss: 0.9314, ce loss: 0.5470, train acc: 0.8906
+step: 200, train arcface loss: 0.8312, ce loss: 0.4418, train acc: 0.9062
+step: 300, train arcface loss: 0.9219, ce loss: 0.5045, train acc: 0.8125
+step: 400, train arcface loss: 1.0130, ce loss: 0.5819, train acc: 0.8594
+step: 500, train arcface loss: 0.8284, ce loss: 0.4288, train acc: 0.8906
+step: 600, train arcface loss: 1.1208, ce loss: 0.6711, train acc: 0.8281
+step: 700, train arcface loss: 0.9252, ce loss: 0.5324, train acc: 0.8750
+step: 800, train arcface loss: 0.8806, ce loss: 0.5093, train acc: 0.8750
+step: 900, train arcface loss: 0.8644, ce loss: 0.4899, train acc: 0.8594
+Loss is:0.9587, Train Accuracy is:85.91%, Test Accuracy is:85.38%, {'accuracy': 0.8602, 'epoch': 21}
+0.8873, 0.9778, 0.8340, 0.8975, 0.7228, 0.9627, 0.4393, 0.9470, 0.9640, 0.9580
+0.8970, 0.9750, 0.8140, 0.8530, 0.7290, 0.9500, 0.4610, 0.9420, 0.9600, 0.9570
+Epoch 24/40
+----------
+step: 0, train arcface loss: 0.8347, ce loss: 0.4594, train acc: 0.8906
+step: 100, train arcface loss: 0.9622, ce loss: 0.5360, train acc: 0.8750
+step: 200, train arcface loss: 1.0160, ce loss: 0.5845, train acc: 0.7812
+step: 300, train arcface loss: 0.9114, ce loss: 0.5225, train acc: 0.8906
+step: 400, train arcface loss: 0.8754, ce loss: 0.4906, train acc: 0.8906
+step: 500, train arcface loss: 1.1220, ce loss: 0.6890, train acc: 0.8750
+step: 600, train arcface loss: 0.9120, ce loss: 0.5498, train acc: 0.8438
+step: 700, train arcface loss: 0.7883, ce loss: 0.4148, train acc: 0.9062
+step: 800, train arcface loss: 0.9712, ce loss: 0.5952, train acc: 0.8750
+step: 900, train arcface loss: 0.8570, ce loss: 0.4813, train acc: 0.9062
+Loss is:0.9131, Train Accuracy is:87.10%, Test Accuracy is:86.00%, {'accuracy': 0.8602, 'epoch': 21}
+0.8938, 0.9780, 0.8502, 0.9032, 0.7403, 0.9723, 0.4695, 0.9580, 0.9773, 0.9672
+0.8460, 0.9700, 0.8060, 0.8290, 0.8050, 0.9720, 0.5150, 0.9260, 0.9690, 0.9620
+Epoch 25/40
+----------
+step: 0, train arcface loss: 0.9266, ce loss: 0.5132, train acc: 0.8281
+step: 100, train arcface loss: 0.7233, ce loss: 0.3768, train acc: 0.9219
+step: 200, train arcface loss: 1.0342, ce loss: 0.6265, train acc: 0.8594
+step: 300, train arcface loss: 0.8646, ce loss: 0.4853, train acc: 0.8438
+step: 400, train arcface loss: 0.9967, ce loss: 0.5654, train acc: 0.8125
+step: 500, train arcface loss: 0.9273, ce loss: 0.5409, train acc: 0.8750
+step: 600, train arcface loss: 0.9382, ce loss: 0.5463, train acc: 0.8594
+step: 700, train arcface loss: 0.7604, ce loss: 0.3964, train acc: 0.9219
+step: 800, train arcface loss: 1.4692, ce loss: 1.0143, train acc: 0.8750
+step: 900, train arcface loss: 0.8045, ce loss: 0.4336, train acc: 0.9375
+Loss is:0.9028, Train Accuracy is:87.71%, Test Accuracy is:85.58%, {'accuracy': 0.8602, 'epoch': 21}
+0.8972, 0.9792, 0.8545, 0.9050, 0.7543, 0.9745, 0.4980, 0.9608, 0.9787, 0.9687
+0.8630, 0.9720, 0.8540, 0.8580, 0.7340, 0.9320, 0.4580, 0.9380, 0.9740, 0.9750
+Epoch 26/40
+----------
+step: 0, train arcface loss: 0.8216, ce loss: 0.4465, train acc: 0.8906
+step: 100, train arcface loss: 0.9480, ce loss: 0.5681, train acc: 0.8438
+step: 200, train arcface loss: 0.7445, ce loss: 0.3782, train acc: 0.9219
+step: 300, train arcface loss: 0.8527, ce loss: 0.4636, train acc: 0.8906
+step: 400, train arcface loss: 0.8656, ce loss: 0.4669, train acc: 0.8906
+step: 500, train arcface loss: 0.9164, ce loss: 0.5145, train acc: 0.8438
+step: 600, train arcface loss: 0.9035, ce loss: 0.5057, train acc: 0.8750
+step: 700, train arcface loss: 0.9029, ce loss: 0.5065, train acc: 0.8438
+step: 800, train arcface loss: 1.1090, ce loss: 0.6439, train acc: 0.8438
+step: 900, train arcface loss: 0.8404, ce loss: 0.4409, train acc: 0.8438
+Loss is:0.9059, Train Accuracy is:87.65%, Test Accuracy is:86.27%, {'accuracy': 0.8627, 'epoch': 26}
+0.9033, 0.9792, 0.8555, 0.9083, 0.7600, 0.9732, 0.4828, 0.9582, 0.9787, 0.9655
+0.8750, 0.9760, 0.7110, 0.8770, 0.8160, 0.9670, 0.5280, 0.9730, 0.9750, 0.9290
+Epoch 27/40
+----------
+step: 0, train arcface loss: 0.9819, ce loss: 0.5780, train acc: 0.8594
+step: 100, train arcface loss: 0.8333, ce loss: 0.4502, train acc: 0.9219
+step: 200, train arcface loss: 0.7619, ce loss: 0.3945, train acc: 0.9375
+step: 300, train arcface loss: 0.8983, ce loss: 0.4772, train acc: 0.8594
+step: 400, train arcface loss: 1.0043, ce loss: 0.5890, train acc: 0.7969
+step: 500, train arcface loss: 0.9722, ce loss: 0.5440, train acc: 0.8125
+step: 600, train arcface loss: 0.8564, ce loss: 0.4826, train acc: 0.9219
+step: 700, train arcface loss: 1.1936, ce loss: 0.7861, train acc: 0.9062
+step: 800, train arcface loss: 0.8975, ce loss: 0.5179, train acc: 0.9062
+step: 900, train arcface loss: 0.9771, ce loss: 0.5351, train acc: 0.7969
+Loss is:0.9074, Train Accuracy is:87.73%, Test Accuracy is:86.06%, {'accuracy': 0.8627, 'epoch': 26}
+0.9015, 0.9815, 0.8578, 0.9070, 0.7628, 0.9718, 0.4880, 0.9590, 0.9782, 0.9657
+0.8670, 0.9790, 0.8210, 0.8790, 0.7240, 0.9590, 0.5110, 0.9650, 0.9740, 0.9270
+Epoch 28/40
+----------
+step: 0, train arcface loss: 0.8824, ce loss: 0.4619, train acc: 0.9219
+step: 100, train arcface loss: 0.6967, ce loss: 0.3388, train acc: 0.9531
+step: 200, train arcface loss: 0.7747, ce loss: 0.3962, train acc: 0.9062
+step: 300, train arcface loss: 1.0359, ce loss: 0.5997, train acc: 0.7812
+step: 400, train arcface loss: 0.8688, ce loss: 0.4619, train acc: 0.8594
+step: 500, train arcface loss: 0.8436, ce loss: 0.4635, train acc: 0.9062
+step: 600, train arcface loss: 0.9613, ce loss: 0.5474, train acc: 0.8750
+step: 700, train arcface loss: 0.8973, ce loss: 0.4869, train acc: 0.8594
+step: 800, train arcface loss: 0.8491, ce loss: 0.4722, train acc: 0.8594
+step: 900, train arcface loss: 1.0259, ce loss: 0.5602, train acc: 0.8125
+Loss is:0.9009, Train Accuracy is:87.89%, Test Accuracy is:78.38%, {'accuracy': 0.8627, 'epoch': 26}
+0.8968, 0.9815, 0.8478, 0.9058, 0.7683, 0.9768, 0.5098, 0.9592, 0.9772, 0.9652
+0.8350, 0.9360, 0.8950, 0.8200, 0.3860, 0.9410, 0.2570, 0.9160, 0.9300, 0.9220
+Epoch 29/40
+----------
+step: 0, train arcface loss: 0.7713, ce loss: 0.4117, train acc: 0.8594
+step: 100, train arcface loss: 0.9951, ce loss: 0.5583, train acc: 0.8281
+step: 200, train arcface loss: 1.1373, ce loss: 0.6792, train acc: 0.7969
+step: 300, train arcface loss: 0.8756, ce loss: 0.4692, train acc: 0.8906
+step: 400, train arcface loss: 1.0726, ce loss: 0.6141, train acc: 0.8281
+step: 500, train arcface loss: 0.8249, ce loss: 0.4584, train acc: 0.9062
+step: 600, train arcface loss: 0.9565, ce loss: 0.5358, train acc: 0.8750
+step: 700, train arcface loss: 0.7590, ce loss: 0.3784, train acc: 0.9531
+step: 800, train arcface loss: 0.7419, ce loss: 0.3811, train acc: 0.9219
+step: 900, train arcface loss: 0.8848, ce loss: 0.4724, train acc: 0.8594
+Loss is:0.9020, Train Accuracy is:87.70%, Test Accuracy is:85.60%, {'accuracy': 0.8627, 'epoch': 26}
+0.8965, 0.9805, 0.8537, 0.9105, 0.7585, 0.9717, 0.4960, 0.9600, 0.9775, 0.9655
+0.8550, 0.9740, 0.7590, 0.8220, 0.8370, 0.9480, 0.5000, 0.9110, 0.9710, 0.9830
+Epoch 30/40
+----------
+step: 0, train arcface loss: 0.8214, ce loss: 0.4495, train acc: 0.8438
+step: 100, train arcface loss: 0.7500, ce loss: 0.4041, train acc: 0.9219
+step: 200, train arcface loss: 0.7577, ce loss: 0.3918, train acc: 0.8906
+step: 300, train arcface loss: 0.7218, ce loss: 0.3681, train acc: 0.9688
+step: 400, train arcface loss: 0.9334, ce loss: 0.5424, train acc: 0.8750
+step: 500, train arcface loss: 0.9250, ce loss: 0.5119, train acc: 0.8594
+step: 600, train arcface loss: 1.2136, ce loss: 0.8004, train acc: 0.8750
+step: 700, train arcface loss: 0.9289, ce loss: 0.5328, train acc: 0.8750
+step: 800, train arcface loss: 1.1531, ce loss: 0.7740, train acc: 0.8750
+step: 900, train arcface loss: 1.2098, ce loss: 0.7644, train acc: 0.8750
+Loss is:0.8935, Train Accuracy is:87.98%, Test Accuracy is:86.27%, {'accuracy': 0.8627, 'epoch': 26}
+0.9025, 0.9820, 0.8475, 0.9103, 0.7743, 0.9758, 0.4993, 0.9603, 0.9797, 0.9665
+0.9060, 0.9750, 0.7940, 0.8690, 0.7710, 0.9600, 0.4640, 0.9650, 0.9620, 0.9610
+Epoch 31/40
+----------
+step: 0, train arcface loss: 0.8663, ce loss: 0.4591, train acc: 0.8438
+step: 100, train arcface loss: 0.8652, ce loss: 0.4468, train acc: 0.9062
+step: 200, train arcface loss: 0.7180, ce loss: 0.3716, train acc: 0.9062
+step: 300, train arcface loss: 0.7760, ce loss: 0.4109, train acc: 0.9062
+step: 400, train arcface loss: 0.7756, ce loss: 0.4090, train acc: 0.8906
+step: 500, train arcface loss: 0.8119, ce loss: 0.4237, train acc: 0.9531
+step: 600, train arcface loss: 0.9536, ce loss: 0.5167, train acc: 0.8750
+step: 700, train arcface loss: 0.9341, ce loss: 0.5076, train acc: 0.8906
+step: 800, train arcface loss: 0.8218, ce loss: 0.4303, train acc: 0.8906
+step: 900, train arcface loss: 0.9930, ce loss: 0.5611, train acc: 0.8281
+Loss is:0.9061, Train Accuracy is:87.90%, Test Accuracy is:85.42%, {'accuracy': 0.8627, 'epoch': 26}
+0.9018, 0.9795, 0.8495, 0.9078, 0.7765, 0.9733, 0.5042, 0.9553, 0.9765, 0.9653
+0.8740, 0.9760, 0.8150, 0.8200, 0.7810, 0.9380, 0.4940, 0.9570, 0.9500, 0.9370
+Epoch 32/40
+----------
+step: 0, train arcface loss: 0.7644, ce loss: 0.4051, train acc: 0.8906
+step: 100, train arcface loss: 1.0006, ce loss: 0.5594, train acc: 0.8281
+step: 200, train arcface loss: 0.9576, ce loss: 0.5949, train acc: 0.9062
+step: 300, train arcface loss: 0.9943, ce loss: 0.5525, train acc: 0.7812
+step: 400, train arcface loss: 1.0498, ce loss: 0.6414, train acc: 0.8750
+step: 500, train arcface loss: 0.7950, ce loss: 0.3995, train acc: 0.9688
+step: 600, train arcface loss: 0.8378, ce loss: 0.4535, train acc: 0.8750
+step: 700, train arcface loss: 0.9583, ce loss: 0.5694, train acc: 0.9062
+step: 800, train arcface loss: 0.7178, ce loss: 0.3677, train acc: 0.9375
+step: 900, train arcface loss: 0.7579, ce loss: 0.4093, train acc: 0.9062
+Loss is:0.9023, Train Accuracy is:87.83%, Test Accuracy is:86.19%, {'accuracy': 0.8627, 'epoch': 26}
+0.9012, 0.9803, 0.8610, 0.9067, 0.7600, 0.9740, 0.4977, 0.9585, 0.9755, 0.9683
+0.9140, 0.9720, 0.8040, 0.8620, 0.8030, 0.9530, 0.4240, 0.9700, 0.9670, 0.9500
+Epoch 33/40
+----------
+step: 0, train arcface loss: 0.8465, ce loss: 0.4488, train acc: 0.8750
+step: 100, train arcface loss: 0.7863, ce loss: 0.4125, train acc: 0.8906
+step: 200, train arcface loss: 0.8316, ce loss: 0.4537, train acc: 0.8438
+step: 300, train arcface loss: 0.9105, ce loss: 0.5071, train acc: 0.8281
+step: 400, train arcface loss: 1.0204, ce loss: 0.6094, train acc: 0.8125
+step: 500, train arcface loss: 0.7304, ce loss: 0.3700, train acc: 0.9062
+step: 600, train arcface loss: 0.7251, ce loss: 0.3618, train acc: 0.9062
+step: 700, train arcface loss: 0.8370, ce loss: 0.4344, train acc: 0.8750
+step: 800, train arcface loss: 0.7431, ce loss: 0.3726, train acc: 0.9219
+step: 900, train arcface loss: 0.7918, ce loss: 0.4149, train acc: 0.9219
+Loss is:0.8804, Train Accuracy is:88.61%, Test Accuracy is:85.88%, {'accuracy': 0.8627, 'epoch': 26}
+0.9060, 0.9830, 0.8613, 0.9168, 0.7878, 0.9760, 0.5157, 0.9628, 0.9828, 0.9688
+0.8620, 0.9730, 0.8200, 0.8740, 0.8440, 0.9640, 0.3810, 0.9490, 0.9640, 0.9570
+Epoch 34/40
+----------
+step: 0, train arcface loss: 0.6540, ce loss: 0.3239, train acc: 0.9219
+step: 100, train arcface loss: 0.9551, ce loss: 0.5306, train acc: 0.8750
+step: 200, train arcface loss: 0.9608, ce loss: 0.5159, train acc: 0.8281
+step: 300, train arcface loss: 0.9294, ce loss: 0.5342, train acc: 0.8438
+step: 400, train arcface loss: 0.7436, ce loss: 0.3824, train acc: 0.9062
+step: 500, train arcface loss: 0.9244, ce loss: 0.5151, train acc: 0.8281
+step: 600, train arcface loss: 0.8975, ce loss: 0.5165, train acc: 0.8750
+step: 700, train arcface loss: 0.8033, ce loss: 0.4222, train acc: 0.8906
+step: 800, train arcface loss: 1.0405, ce loss: 0.6062, train acc: 0.8281
+step: 900, train arcface loss: 1.1462, ce loss: 0.7416, train acc: 0.8438
+Loss is:0.8983, Train Accuracy is:88.13%, Test Accuracy is:85.11%, {'accuracy': 0.8627, 'epoch': 26}
+0.8977, 0.9812, 0.8543, 0.9123, 0.7743, 0.9747, 0.5107, 0.9600, 0.9785, 0.9692
+0.8220, 0.9700, 0.8690, 0.8130, 0.7210, 0.9620, 0.4710, 0.9460, 0.9720, 0.9650
+Epoch 35/40
+----------
+step: 0, train arcface loss: 0.6951, ce loss: 0.3576, train acc: 0.9062
+step: 100, train arcface loss: 0.7516, ce loss: 0.3908, train acc: 0.9062
+step: 200, train arcface loss: 0.8321, ce loss: 0.4533, train acc: 0.8906
+step: 300, train arcface loss: 0.8079, ce loss: 0.4279, train acc: 0.8906
+step: 400, train arcface loss: 0.8634, ce loss: 0.4573, train acc: 0.8906
+step: 500, train arcface loss: 1.1425, ce loss: 0.7208, train acc: 0.8438
+step: 600, train arcface loss: 0.9553, ce loss: 0.5300, train acc: 0.8281
+step: 700, train arcface loss: 0.7969, ce loss: 0.4272, train acc: 0.8750
+step: 800, train arcface loss: 0.7620, ce loss: 0.3877, train acc: 0.9219
+step: 900, train arcface loss: 0.8516, ce loss: 0.4698, train acc: 0.9375
+Loss is:0.8979, Train Accuracy is:88.24%, Test Accuracy is:86.27%, {'accuracy': 0.8627, 'epoch': 26}
+0.9022, 0.9817, 0.8585, 0.9117, 0.7805, 0.9722, 0.5143, 0.9567, 0.9773, 0.9695
+0.8750, 0.9700, 0.8540, 0.8890, 0.7190, 0.9580, 0.4850, 0.9510, 0.9720, 0.9540
+Epoch 36/40
+----------
+step: 0, train arcface loss: 0.7252, ce loss: 0.4015, train acc: 0.9062
+step: 100, train arcface loss: 0.9942, ce loss: 0.5676, train acc: 0.8125
+step: 200, train arcface loss: 0.7404, ce loss: 0.3688, train acc: 0.9375
+step: 300, train arcface loss: 0.9305, ce loss: 0.5499, train acc: 0.8750
+step: 400, train arcface loss: 0.9547, ce loss: 0.6177, train acc: 0.8906
+step: 500, train arcface loss: 0.9900, ce loss: 0.5705, train acc: 0.8125
+step: 600, train arcface loss: 1.0891, ce loss: 0.6450, train acc: 0.8750
+step: 700, train arcface loss: 0.9256, ce loss: 0.4954, train acc: 0.8594
+step: 800, train arcface loss: 0.7864, ce loss: 0.4263, train acc: 0.8906
+step: 900, train arcface loss: 1.1127, ce loss: 0.7087, train acc: 0.8750
+Loss is:0.8908, Train Accuracy is:88.19%, Test Accuracy is:86.05%, {'accuracy': 0.8627, 'epoch': 26}
+0.9020, 0.9813, 0.8582, 0.9130, 0.7825, 0.9720, 0.4982, 0.9625, 0.9822, 0.9670
+0.8770, 0.9760, 0.8060, 0.8810, 0.7310, 0.9540, 0.4950, 0.9790, 0.9640, 0.9420
+Epoch 37/40
+----------
+step: 0, train arcface loss: 0.8205, ce loss: 0.4546, train acc: 0.9062
+step: 100, train arcface loss: 0.9793, ce loss: 0.5658, train acc: 0.8281
+step: 200, train arcface loss: 1.1438, ce loss: 0.7251, train acc: 0.8281
+step: 300, train arcface loss: 1.0117, ce loss: 0.5695, train acc: 0.8750
+step: 400, train arcface loss: 1.0028, ce loss: 0.6398, train acc: 0.8750
+step: 500, train arcface loss: 0.9658, ce loss: 0.5410, train acc: 0.8281
+step: 600, train arcface loss: 0.8021, ce loss: 0.4282, train acc: 0.9062
+step: 700, train arcface loss: 1.1566, ce loss: 0.7542, train acc: 0.8438
+step: 800, train arcface loss: 0.7813, ce loss: 0.3947, train acc: 0.9219
+step: 900, train arcface loss: 0.9648, ce loss: 0.5498, train acc: 0.7969
+Loss is:0.9066, Train Accuracy is:87.85%, Test Accuracy is:86.82%, {'accuracy': 0.8682, 'epoch': 37}
+0.8977, 0.9820, 0.8557, 0.9112, 0.7758, 0.9707, 0.4937, 0.9603, 0.9730, 0.9648
+0.8930, 0.9680, 0.7960, 0.8730, 0.8080, 0.9500, 0.4980, 0.9690, 0.9690, 0.9580
+Epoch 38/40
+----------
+step: 0, train arcface loss: 1.0160, ce loss: 0.6219, train acc: 0.8438
+step: 100, train arcface loss: 0.8657, ce loss: 0.4492, train acc: 0.8750
+step: 200, train arcface loss: 0.8503, ce loss: 0.4486, train acc: 0.8438
+step: 300, train arcface loss: 0.8813, ce loss: 0.4610, train acc: 0.8906
+step: 400, train arcface loss: 1.1306, ce loss: 0.6825, train acc: 0.8594
+step: 500, train arcface loss: 1.1545, ce loss: 0.7173, train acc: 0.8594
+step: 600, train arcface loss: 0.8842, ce loss: 0.4612, train acc: 0.8594
+step: 700, train arcface loss: 1.0078, ce loss: 0.5710, train acc: 0.8438
+step: 800, train arcface loss: 0.8234, ce loss: 0.4383, train acc: 0.9062
+step: 900, train arcface loss: 0.9025, ce loss: 0.4794, train acc: 0.8750
+Loss is:0.8662, Train Accuracy is:88.96%, Test Accuracy is:86.04%, {'accuracy': 0.8682, 'epoch': 37}
+0.9087, 0.9840, 0.8620, 0.9200, 0.7900, 0.9782, 0.5320, 0.9658, 0.9843, 0.9712
+0.8980, 0.9700, 0.8550, 0.8540, 0.7420, 0.9700, 0.4530, 0.9360, 0.9640, 0.9620
+Epoch 39/40
+----------
+step: 0, train arcface loss: 0.9218, ce loss: 0.5258, train acc: 0.8906
+step: 100, train arcface loss: 0.8827, ce loss: 0.4852, train acc: 0.9219
+step: 200, train arcface loss: 0.9645, ce loss: 0.5690, train acc: 0.8594
+step: 300, train arcface loss: 0.8616, ce loss: 0.4718, train acc: 0.9219
+step: 400, train arcface loss: 0.8320, ce loss: 0.4485, train acc: 0.9062
+step: 500, train arcface loss: 0.7943, ce loss: 0.4251, train acc: 0.9375
+step: 600, train arcface loss: 0.6283, ce loss: 0.3096, train acc: 0.9375
+step: 700, train arcface loss: 0.8795, ce loss: 0.4696, train acc: 0.8594
+step: 800, train arcface loss: 0.9563, ce loss: 0.5345, train acc: 0.8750
+step: 900, train arcface loss: 0.8373, ce loss: 0.4821, train acc: 0.9219
+Loss is:0.8643, Train Accuracy is:89.00%, Test Accuracy is:85.38%, {'accuracy': 0.8682, 'epoch': 37}
+0.9087, 0.9837, 0.8672, 0.9212, 0.7875, 0.9810, 0.5340, 0.9657, 0.9832, 0.9678
+0.8810, 0.9740, 0.8340, 0.9390, 0.6580, 0.9370, 0.4300, 0.9620, 0.9620, 0.9610
+Epoch 40/40
+----------
+step: 0, train arcface loss: 0.8001, ce loss: 0.4407, train acc: 0.9219
+step: 100, train arcface loss: 0.7129, ce loss: 0.3564, train acc: 0.9062
+step: 200, train arcface loss: 0.9991, ce loss: 0.5921, train acc: 0.8594
+step: 300, train arcface loss: 0.8168, ce loss: 0.4433, train acc: 0.8438
+step: 400, train arcface loss: 0.9504, ce loss: 0.5601, train acc: 0.8594
+step: 500, train arcface loss: 1.1515, ce loss: 0.7109, train acc: 0.7969
+step: 600, train arcface loss: 1.1079, ce loss: 0.6619, train acc: 0.8125
+step: 700, train arcface loss: 1.0444, ce loss: 0.6086, train acc: 0.8281
+step: 800, train arcface loss: 0.8390, ce loss: 0.4514, train acc: 0.8750
+step: 900, train arcface loss: 1.0171, ce loss: 0.5834, train acc: 0.8281
+Loss is:0.9000, Train Accuracy is:88.21%, Test Accuracy is:86.52%, {'accuracy': 0.8682, 'epoch': 37}
+0.9023, 0.9788, 0.8575, 0.9100, 0.7768, 0.9702, 0.5202, 0.9583, 0.9785, 0.9687
+0.8430, 0.9690, 0.8410, 0.8410, 0.8010, 0.9720, 0.5090, 0.9370, 0.9750, 0.9640
+Finish training!
+The best accuracy model is: {'accuracy': 0.8682, 'epoch': 37}
+weight_norm: tensor([0.3530, 0.3689, 0.3736, 0.3360, 0.5101, 0.2878, 0.4691, 0.2663, 0.3662,
+        0.3517])
