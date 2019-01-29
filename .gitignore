@@ -1,0 +1,13 @@
+.idea
+.DS_Store
+__pycache__
+
+# not upload model and status_info file
+models
+_info
+
+# not upload data
+*.pt
+*-ubyte
+
+!*.png
